@@ -1,24 +1,23 @@
-# translation of kicad.po to Čeština
-# Martin <martin@ok1rr.com>, 2008.
-# Milan Horák <stranger@tiscali.cz>, 2008.
+﻿# Milan Horák <stranger@tiscali.cz>, 2008.
 # Chronos <robie@centrum.cz>, 2011.
+# Jan Křivánek <sdz530@seznam.cz>, 2017.
 # translation of kicad.po to
 msgid ""
 msgstr ""
 "Project-Id-Version: kicad\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2011-08-13 07:36+0100\n"
-"PO-Revision-Date: 2011-08-15 09:59+0100\n"
+"PO-Revision-Date: 2017-02-18 19:57+0100\n"
 "Last-Translator: Chronos <robie@centrum.cz>\n"
 "Language-Team: Čeština <cs@li.org>\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Poedit-Language: Czech\n"
-"X-Poedit-Country: CZECH REPUBLIC\n"
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Poedit-Basepath: /home/chronos/www/other/kicad/kicad.bzr\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"Language: cs_CZ\n"
+"X-Generator: Poedit 1.8.11\n"
 "X-Poedit-SearchPath-0: /home/chronos/www/other/kicad/kicad.bzr\n"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/onrightclick.cpp:38
@@ -78,6 +77,10 @@ msgstr "Načíst soubor &Gerber"
 msgid "Load a new Gerber file on the current layer. Previous data will be deleted"
 msgstr "Načíst nový soubor Gerber do aktuální vrstvy. Předchozí data budou smazána"
 
+#: common/dialogs/dialog_exit_base.cpp:43
+msgid "If you don't save, all your changes will be permanently lost."
+msgstr "Pokud nechcete uložit, všechny změny budou trvale ztraceny."
+
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:47
 msgid "Load &EXCELLON Drill File"
 msgstr "Načíst vrtací soubor &EXCELLON "
@@ -93,6 +96,14 @@ msgstr "Načíst &D-kódy"
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:54
 msgid "Load D-Codes definition file"
 msgstr "Načíst definiční soubor D-kódů"
+
+#: common/dialogs/dialog_exit_base.cpp:62
+msgid "Save and Exit"
+msgstr "Uložit a zavřít"
+
+#: common/dialogs/dialog_exit_base.cpp:66
+msgid "Exit without Save"
+msgstr "Neukládat a zavřít"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:68
 msgid "Open &Recent Gerber File"
@@ -214,9 +225,25 @@ msgstr "O prohlížeči formátu Gerber a vrtání Gerbview"
 msgid "&File"
 msgstr "&Soubor"
 
-#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:211
-msgid "&Preferences"
-msgstr "&Nastavení"
+#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:310
+msgid "Configure Pa&ths"
+msgstr "Nas&tavit cesty"
+
+#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:311
+msgid "Edit path configuration environment variables"
+msgstr "Nastavit cesty ke knihovnám a adresářům"
+
+#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:293
+msgid "Open Text E&ditor"
+msgstr "Otevřít Textový E&ditor"
+
+#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:293
+msgid "&Open Local File"
+msgstr "Otevřít soubor na disku ..."
+
+#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:301
+msgid "Edit local file"
+msgstr "Otevřít soubor na disku ..."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/menubar.cpp:212
 msgid "&Miscellaneous"
@@ -252,11 +279,11 @@ msgstr "Soubory Gerber (*.g* .lgr .pho)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/files.cpp:107
 msgid "Top layer (*.GTL)|*.GTL;*.gtl|"
-msgstr ""
+msgstr "Vrchí vrstva (*.GTL)|*.GTL;*.gtl|"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/files.cpp:108
 msgid "Bottom layer (*.GBL)|*.GBL;*.gbl|"
-msgstr ""
+msgstr "Spodní vrstva (*.GBL)|*.GBL;*.gbl|"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/files.cpp:109
 msgid "Bottom solder resist (*.GBS)|*.GBS;*.gbs|"
@@ -320,7 +347,7 @@ msgstr "Načíst soubor Gerber DCODE"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/rs274x.cpp:364
 msgid "RS274X: Command \"IR\" rotation value not allowed"
-msgstr ""
+msgstr "RS274X: Příkaz \"IR\" hodnota rotace není povolena"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/rs274x.cpp:455
 msgid "RS274X: Command KNOCKOUT ignored by Gerbview"
@@ -337,10 +364,6 @@ msgstr "Vrstva"
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/class_gerbview_layer_widget.cpp:80
 msgid "Render"
 msgstr "Vykreslit"
-
-#: /home/chronos/www/other/kicad/kicad.bzr/gerbview/class_gerbview_layer_widget.cpp:101
-msgid "Grid"
-msgstr "Mřížka "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/gerbview/class_gerbview_layer_widget.cpp:101
 msgid "Show the (x,y) grid dots"
@@ -959,15 +982,13 @@ msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/transline_dlg_funct.cpp:126
 msgid "Specific Resistance"
-msgstr ""
+msgstr "Měrný odpor"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/attenuators.cpp:105
 #, c-format
-msgid ""
-"Error!\n"
+msgid "Error!\n"
 "Set attenuation more than %f dB"
-msgstr ""
-"Chyba!\n"
+msgstr "Chyba!\n"
 "Nastavení útlumu na víc než %f dB"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/tracks_width_versus_current.cpp:191
@@ -1061,7 +1082,7 @@ msgstr ""
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/transline_ident.cpp:343
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/transline_ident.cpp:376
 msgid "Conductor Losses"
-msgstr ""
+msgstr "Ztráty spoje"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/transline_ident.cpp:138
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/transline_ident.cpp:175
@@ -1428,7 +1449,7 @@ msgstr "Vout"
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:126
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:901
 msgid "Calculate"
-msgstr ""
+msgstr "Vypočítat"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:129
 msgid "Message"
@@ -1444,8 +1465,7 @@ msgid "Parameters:"
 msgstr "Parametry:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:146
-msgid ""
-"Valid max values:\n"
+msgid "Valid max values:\n"
 "35A for external traces and 17.5A for internal.\n"
 "400mil widths.\n"
 "Maximum temperature rise of 100 deg C."
@@ -1461,7 +1481,7 @@ msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:169
 msgid "Temperature rise"
-msgstr ""
+msgstr "Teplotní nárůst"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:176
 msgid "deg C"
@@ -1525,7 +1545,7 @@ msgstr "Wattů"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:287
 msgid "Tracks Caracteristics (Internal Layers):"
-msgstr ""
+msgstr "Charakteristika spoů (vnitřní vrstvy)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:360
 msgid "Track Width"
@@ -1612,8 +1632,7 @@ msgid " > 500V"
 msgstr " > 500V"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcb_calculator/dialogs/pcb_calculator_frame_base.cpp:441
-msgid ""
-"*  B1 - Internal Conductors\n"
+msgid "*  B1 - Internal Conductors\n"
 "*  B2 - External Conductors, uncoated, sea level to 3050 m\n"
 "*  B3 - External Conductors, uncoated, over 3050 m\n"
 "*  B4 - External Conductors, with permanent polymer coating (any elevation)\n"
@@ -1941,11 +1960,9 @@ msgid "Problem while running the PDF viewer"
 msgstr "Problém při spouštění prohlížeče PDF"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/common/gestfich.cpp:660
-msgid ""
-"\n"
+msgid "\n"
 " command is "
-msgstr ""
-"\n"
+msgstr "\n"
 " příkaz je "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/common/gestfich.cpp:666
@@ -2110,12 +2127,12 @@ msgid "Y"
 msgstr "Y"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/common/hotkeys_basic.cpp:336
-msgid ""
-"Current hotkey list:\n"
+msgid "Current hotkey list:\n"
 "\n"
-msgstr ""
-"Aktuální seznam klávesových zkratek:\n"
+""
+msgstr "Aktuální seznam klávesových zkratek:\n"
 "\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/common/hotkeys_basic.cpp:344
 msgid "key "
@@ -2401,7 +2418,7 @@ msgstr "Délka čáry překročena"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/common/richio.cpp:386
 msgid "OUTPUTSTREAM_OUTPUTFORMATTER write error"
-msgstr ""
+msgstr "Chyba zápisu OUTPUTSTREAM_OUTPUTFORMATTER"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/common/base_struct.cpp:462
 msgid "Italic"
@@ -2634,8 +2651,7 @@ msgid "GNU General Public License (GPL) version 2"
 msgstr "GNU General Public License (GPL) verze 2"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/cvpcb/cvframe.cpp:244
-msgid ""
-"Net and component list modified.\n"
+msgid "Net and component list modified.\n"
 "Save before exit ?"
 msgstr "Netlist a seznam součástek změněn. Uložit před ukončením?"
 
@@ -3061,13 +3077,11 @@ msgstr "Knihovny pouzder"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/cvpcb/dialogs/dialog_cvpcb_config_fbp.cpp:23
 #: /home/chronos/www/other/kicad/kicad.bzr/cvpcb/dialogs/dialog_cvpcb_config_fbp.cpp:60
-msgid ""
-"List of active library files.\n"
+msgid "List of active library files.\n"
 "Only library files in this list are loaded by Pcbnew.\n"
 "The order of this list is important:\n"
 "Pcbnew searchs for a given footprint using this list order priority."
-msgstr ""
-"Seznam aktivních knihoven.\n"
+msgstr "Seznam aktivních knihoven.\n"
 "Do Pcbnew budou načteny pouze knihovny na tomto seznamu.\n"
 "Pořadí v tomto seznamu je důležité:\n"
 "Pcbnew hledá dané pouzdro s prioritou, danou pořadím v tomto seznamu."
@@ -3140,11 +3154,9 @@ msgid "Current search path list"
 msgstr "Aktuální seznam prohledávaných cest"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/cvpcb/dialogs/dialog_cvpcb_config_fbp.cpp:138
-msgid ""
-"Paths  (system paths and user paths) used to search and load libraries files and component doc files.\n"
+msgid "Paths  (system paths and user paths) used to search and load libraries files and component doc files.\n"
 "Sorted by decreasing priority order."
-msgstr ""
-"Cesty (systémové a uživatelské) ke knihovnám a dokumentaci součástek.\n"
+msgstr "Cesty (systémové a uživatelské) ke knihovnám a dokumentaci součástek.\n"
 "Řazeny sestupně podle priority."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/cvpcb/dialogs/dialog_display_options_base.cpp:24
@@ -3289,6 +3301,12 @@ msgstr "Vytvořit obrázek (formát jpg)"
 #: /home/chronos/www/other/kicad/kicad.bzr/3d-viewer/3d_toolbar.cpp:134
 msgid "&Exit"
 msgstr "&Konec"
+
+#: 3d-viewer/3d_viewer/3d_toolbar.cpp:162 cvpcb/menubar.cpp:132
+#: gerbview/menubar.cpp:272 kicad/menubar.cpp:443
+#: pagelayout_editor/menubar.cpp:182
+msgid "&Preferences"
+msgstr "&Nastavení"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/3d-viewer/3d_toolbar.cpp:140
 msgid "Choose background color"
@@ -3855,20 +3873,18 @@ msgid "Open Schematic"
 msgstr "Otevřít schéma"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/files-io.cpp:220
-msgid ""
-"Ready\n"
+msgid "Ready\n"
 "Working dir: \n"
-msgstr ""
-"Připraven\n"
+""
+msgstr "Připraven\n"
 "Pracovní adresář: \n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/files-io.cpp:280
 #, c-format
-msgid ""
-"Component library <%s> failed to load.\n"
+msgid "Component library <%s> failed to load.\n"
 "Error: %s"
-msgstr ""
-"Nepodařilo se načíst knihovnu součástek <%s>.\n"
+msgstr "Nepodařilo se načíst knihovnu součástek <%s>.\n"
 "Chyba: %s"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/files-io.cpp:284
@@ -3883,6 +3899,26 @@ msgstr "Soubor %s nenalezen."
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/menubar.cpp:49
 msgid "&New\tCtrl+N"
 msgstr "&Nový\tCtrl+N"
+
+#: kicad/menubar.cpp:141
+msgid "&Open Project"
+msgstr "Otevřít Projekt"
+
+#: kicad/menubar.cpp:142
+msgid "Save project"
+msgstr "Uložit projekt"
+
+#: kicad/menubar.cpp:143 kicad/menubar.cpp:248
+msgid "New Project"
+msgstr "Nový Projekt"
+
+#: kicad/menubar.cpp:143 kicad/menubar.cpp:248
+msgid "&New Project"
+msgstr "Nový Projekt"
+
+#: kicad/menubar.cpp:144
+msgid "New Project from &Template"
+msgstr "Nový Projekt ze šablony"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/menubar.cpp:50
 msgid "New schematic project"
@@ -4187,11 +4223,11 @@ msgstr "Otevřít manuál Eeschema"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/menubar.cpp:501
 msgid "&Getting Started in KiCad"
-msgstr ""
+msgstr "Jak začít v KiCADu..."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/menubar.cpp:502
 msgid "Open the \"Getting Started in KiCad\" guide for beginners"
-msgstr ""
+msgstr "Otevře \"Getting Started in KiCad\" průvodce pro začátečníky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/menubar.cpp:509
 msgid "&About EESchema"
@@ -4223,7 +4259,7 @@ msgstr "Jméno součástky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libfield.cpp:37
 msgid "Enter a name to create a new component based on this one."
-msgstr ""
+msgstr "Zadejte název pro vytvoření nové komponenty založené na tomto jednom."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libfield.cpp:42
 #, c-format
@@ -4241,8 +4277,7 @@ msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libfield.cpp:84
 #, c-format
-msgid ""
-"The name <%s> conflicts with an existing entry in the component library <%s>.\n"
+msgid "The name <%s> conflicts with an existing entry in the component library <%s>.\n"
 "\n"
 "Do you wish to replace the current component in library with this one?"
 msgstr ""
@@ -4255,16 +4290,14 @@ msgstr "Potvrdit"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libfield.cpp:99
 #, c-format
-msgid ""
-"The current component already has an alias named <%s>.\n"
+msgid "The current component already has an alias named <%s>.\n"
 "\n"
 "Do you wish to remove this alias from the component?"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libfield.cpp:116
 #, c-format
-msgid ""
-"The new component contains alias names that conflict with entries in the component library <%s>.\n"
+msgid "The new component contains alias names that conflict with entries in the component library <%s>.\n"
 "\n"
 "Do you wish to remove all of the conflicting aliases from this component?"
 msgstr ""
@@ -4398,6 +4431,15 @@ msgstr "Nezobrazovat skryté vývody"
 msgid "Show hidden pins"
 msgstr "Zobrazit skryté vývody"
 
+#: eeschema/schframe.cpp:639 pcbnew/pcbframe.cpp:611
+#, c-format
+msgid "Save the changes in\n"
+"'%s'\n"
+"before closing?"
+msgstr "Uložit změny do\n"
+"'%s'\n"
+"před uzavřením ?"
+
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/schframe.cpp:646
 msgid "Schematic"
 msgstr "Schéma"
@@ -4494,16 +4536,22 @@ msgstr "hierarchie..."
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/build_BOM.cpp:150
 #, c-format
 msgid "> %-28.28s %s        (Sheet %s) pos: %3.3f, %3.3f\n"
+""
 msgstr "> %-28.28s %s        (List %.2s) pozice: %3.3f, %3.3f\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/build_BOM.cpp:173
 #, c-format
 msgid "> %-28.28s PinSheet %-7.7s (Sheet %s) pos: %3.3f, %3.3f\n"
+""
 msgstr "> %-28.28s List vývodů %-7.7s (List %.2s) pozice: %3.3f, %3.3f\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/build_BOM.cpp:189
 msgid "#End labels\n"
+""
 msgstr "#Konec označení\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit_onrightclick.cpp:90
 msgid "Move Arc"
@@ -4899,11 +4947,9 @@ msgid "%s Export"
 msgstr "%s Exportovat"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/netlist_control.cpp:555
-msgid ""
-"Some items are not annotated\n"
+msgid "Some items are not annotated\n"
 "Do you want to annotate schematic?"
-msgstr ""
-"Některé položky nejsou očíslovány\n"
+msgstr "Některé položky nejsou očíslovány\n"
 "Chcete očíslovat schéma?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/netlist_control.cpp:570
@@ -4920,7 +4966,7 @@ msgstr "Chyba: Je třeba zadat název souboru"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/lib_bezier.cpp:27
 msgid "Bezier"
-msgstr ""
+msgstr "Křivka"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/lib_bezier.cpp:70
 #, c-format
@@ -4950,7 +4996,7 @@ msgstr ""
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/lib_rectangle.cpp:305
 #, c-format
 msgid "Rectangle from (%s, %s) to (%s, %s)"
-msgstr ""
+msgstr "Obdékník z (%s, %s) to (%s, %s) "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/tool_lib.cpp:39
 msgid "Deselect current tool"
@@ -5046,11 +5092,11 @@ msgstr "Upravit vývody část po části (používejte opatrně!)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/tool_lib.cpp:180
 msgid "Usual option = OFF when parts are not locked"
-msgstr ""
+msgstr "Obvyklá volba = OFF jsou-li součástí nejsou zamčené"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/tool_lib.cpp:182
 msgid "Usual option = ON when parts are locked"
-msgstr ""
+msgstr "Obvyklá volba = OFF jsou-li součástí jsou zamčené"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/component_references_lister.cpp:487
 #, c-format
@@ -5127,7 +5173,9 @@ msgstr "Alias"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/eelibs_read_libraryfiles.cpp:62
 msgid "\n"
+""
 msgstr "\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/eelibs_read_libraryfiles.cpp:72
 msgid "Library "
@@ -5193,30 +5241,30 @@ msgid "ERC report"
 msgstr "Zpráva ERC"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/erc.cpp:522
-msgid ""
-"\n"
+msgid "\n"
 "***** Sheet / (Root) \n"
-msgstr ""
-"\n"
+""
+msgstr "\n"
 "***** List / (Root) \n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/erc.cpp:527
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "***** Sheet %s\n"
-msgstr ""
-"\n"
+""
+msgstr "\n"
 "***** List %s\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/erc.cpp:546
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 " >> Errors ERC: %d\n"
-msgstr ""
-"\n"
+""
+msgstr "\n"
 " >> Chyby ERC: %d\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/sch_bus_entry.cpp:231
 msgid "Bus to Wire Entry"
@@ -5330,12 +5378,10 @@ msgstr "Načítání hotovo"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/edit_component_in_schematic.cpp:138
 #, c-format
-msgid ""
-"%s is a power component and it's value cannot be modified!\n"
+msgid "%s is a power component and it's value cannot be modified!\n"
 "\n"
 "You must create a new power component with the new value."
-msgstr ""
-"%s je napájení součástky a jeho hodnota nemůže být změněna!\n"
+msgstr "%s je napájení součástky a jeho hodnota nemůže být změněna!\n"
 "\n"
 "Musíte vytvořit novou součástku napájení s novou hodnotou."
 
@@ -5354,7 +5400,7 @@ msgstr "Pole odkazu nemůže být prázdné! Beze změny"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/edit_component_in_schematic.cpp:206
 msgid "The value field cannot be empty!  No change"
-msgstr ""
+msgstr "Hodnota pole nemůže být prázdná! Nezměněno"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:27
 msgid "Component Library Editor: "
@@ -5366,12 +5412,10 @@ msgstr " [Pouze pro čtení]"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:64
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:100
-msgid ""
-"Current part not saved.\n"
+msgid "Current part not saved.\n"
 "\n"
 "Discard current changes?"
-msgstr ""
-"Aktuální součástka neuložena.\n"
+msgstr "Aktuální součástka neuložena.\n"
 "\n"
 "Zahodit provedené změny?"
 
@@ -5383,7 +5427,7 @@ msgstr "Součástka \"%s\" nenalezena v knihovně \"%s\"."
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:180
 #, c-format
 msgid "Could not create copy of part <%s> in library <%s>."
-msgstr ""
+msgstr "Nelze vytvořit kopii části <%s> v knihovně <%s>."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:249
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:574
@@ -5454,11 +5498,9 @@ msgstr "Chyba mazání položky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:398
 #, c-format
-msgid ""
-"Select 1 of %d components to delete\n"
+msgid "Select 1 of %d components to delete\n"
 "from library <%s>."
-msgstr ""
-"Vyberte 1 z %d součástek k smazání\n"
+msgstr "Vyberte 1 z %d součástek k smazání\n"
 "z knihovny <%s>."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:411
@@ -5476,8 +5518,7 @@ msgid "The component being deleted has been modified. All changes will be lost. 
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libedit.cpp:463
-msgid ""
-"All changes to the current component will be lost!\n"
+msgid "All changes to the current component will be lost!\n"
 "\n"
 "Clear the current component from the screen?"
 msgstr ""
@@ -5632,20 +5673,16 @@ msgid "Electronics rule check error"
 msgstr "Chyba kontroly elektrických pravidel"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libeditframe.cpp:309
-msgid ""
-"Component was modified!\n"
+msgid "Component was modified!\n"
 "Discard changes?"
-msgstr ""
-"Součástka byla změněna.\n"
+msgstr "Součástka byla změněna.\n"
 "Zrušit změny?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libeditframe.cpp:323
 #, c-format
-msgid ""
-"Library \"%s\" was modified!\n"
+msgid "Library \"%s\" was modified!\n"
 "Discard changes?"
-msgstr ""
-"Knihovna \"%s\" byla změněna.\n"
+msgstr "Knihovna \"%s\" byla změněna.\n"
 "Zrušit změny?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/libeditframe.cpp:992
@@ -5702,8 +5739,7 @@ msgstr "Hierarchický list"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/class_library.cpp:26
 #, c-format
-msgid ""
-"Library <%s> has duplicate entry name <%s>.\n"
+msgid "Library <%s> has duplicate entry name <%s>.\n"
 "This may cause some unexpected behavior when loading components into a schematic."
 msgstr ""
 
@@ -5870,12 +5906,10 @@ msgid " - OK"
 msgstr " - OK"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/lib_export.cpp:138
-msgid ""
-"This library will not be available until it is loaded by EESchema.\n"
+msgid "This library will not be available until it is loaded by EESchema.\n"
 "\n"
 "Modify the EESchema library configuration if you want to include it as part of this project."
-msgstr ""
-"Tato knihovna nebude dostupná, dokud nebude načtena pomocí Eeschema.\n"
+msgstr "Tato knihovna nebude dostupná, dokud nebude načtena pomocí Eeschema.\n"
 "\n"
 "Pokud ji chcete zahrnout jako část tohoto projektu, upravte natavení knihovny EESchema."
 
@@ -6017,12 +6051,10 @@ msgid " in the current schematic hierarchy"
 msgstr " v aktuální hierarchii schéma"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/sheet.cpp:86
-msgid ""
-".\n"
+msgid ".\n"
 "\n"
 "Do you want to create a sheet with the contents of this file?"
-msgstr ""
-".\n"
+msgstr ".\n"
 "\n"
 "Chcete vytvořit list s obsahem tohoto souboru?"
 
@@ -6031,19 +6063,18 @@ msgid "Changing the sheet file name cannot be undone.  "
 msgstr "Změnu jména listu nelze vrátit zpět."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/sheet.cpp:117
-msgid ""
-".\n"
+msgid ".\n"
 "\n"
 "Do you want to replace the sheet with the contents of this file?"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/sheet.cpp:129
-msgid ""
-"This sheet uses shared data in a complex hierarchy.\n"
+msgid "This sheet uses shared data in a complex hierarchy.\n"
 "\n"
-msgstr ""
-"Tento list používá data sdílená ve složité hierarchii.\n"
+""
+msgstr "Tento list používá data sdílená ve složité hierarchii.\n"
 "\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/sheet.cpp:130
 msgid "Do you wish to convert it to a simple hierarchical sheet?"
@@ -6107,11 +6138,9 @@ msgid "Print mode"
 msgstr "Režim tisku"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_SVG_print_base.cpp:38
-msgid ""
-"Choose if you wand to draw the sheet like it appears on screen,\n"
+msgid "Choose if you wand to draw the sheet like it appears on screen,\n"
 "or in black and white mode, better to print it when using  black and white printers"
-msgstr ""
-"Použijte, pokud chcete kreslit list tak, jak je zobrazen na obrazovce\n"
+msgstr "Použijte, pokud chcete kreslit list tak, jak je zobrazen na obrazovce\n"
 "nebo v černobílém režimu. Vytiskne se lépe při použití černobílé tiskárny"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_SVG_print_base.cpp:42
@@ -6135,11 +6164,9 @@ msgid "Quit"
 msgstr "Ukončit"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_SVG_print_base.cpp:72
-msgid ""
-"Enter a filename if you do not want to use default file names\n"
+msgid "Enter a filename if you do not want to use default file names\n"
 "Can be used only when printing the current sheet"
-msgstr ""
-"Zadejte název souboru, pokud nechcete použít výchozí názvy\n"
+msgstr "Zadejte název souboru, pokud nechcete použít výchozí názvy\n"
 "Lze použít pouze při tisku aktuálního listu"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_sch_edit_sheet_pin_base.cpp:38
@@ -6194,38 +6221,36 @@ msgstr "Otevření souboru selhalo"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:519
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "#Global, Hierarchical Labels and PinSheets ( order = Sheet Number ) count = %d\n"
-msgstr ""
-"\n"
+""
+msgstr "\n"
 "#Globální, hierarchické označení a listy vývodů (dle čísla listu) počet = %d\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:531
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "#Global, Hierarchical Labels and PinSheets ( order = Alphab. ) count = %d\n"
 "\n"
-msgstr ""
-"\n"
+""
+msgstr "\n"
 "#Globální, hierarchické označení a listy vývodů (abecedně) počet = %d\n"
 "\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:540
-msgid ""
-"\n"
+msgid "\n"
 "#End List\n"
-msgstr ""
-"\n"
+""
+msgstr "\n"
 "#Konec seznamu\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:656
-msgid ""
-"\n"
+msgid "\n"
 "#Cmp ( order = Reference )"
-msgstr ""
-"\n"
+msgstr "\n"
 "#Cmp (dle reference)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:659
@@ -6236,14 +6261,14 @@ msgstr " (se SubCmp)"
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:794
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:1035
 msgid "#End Cmp\n"
+""
 msgstr "#Konec Cmp\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_build_BOM.cpp:972
-msgid ""
-"\n"
+msgid "\n"
 "#Cmp ( order = Value )"
-msgstr ""
-"\n"
+msgstr "\n"
 "#Cmp (dle hodnoty)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/annotate_dialog.cpp:125
@@ -6263,12 +6288,10 @@ msgid "on the current sheet?"
 msgstr "na aktuálním listu?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/annotate_dialog.cpp:133
-msgid ""
-"\n"
+msgid "\n"
 "\n"
 "This operation will change the current annotation and cannot be undone."
-msgstr ""
-"\n"
+msgstr "\n"
 "\n"
 "Tato operace nevratně změní aktuální očíslování."
 
@@ -6285,12 +6308,10 @@ msgid "the current sheet?"
 msgstr "aktuální list?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/annotate_dialog.cpp:159
-msgid ""
-"\n"
+msgid "\n"
 "\n"
 "This operation will clear the existing annotation and cannot be undone."
-msgstr ""
-"\n"
+msgstr "\n"
 "\n"
 "Tato operace nevratně smaže existující očíslování."
 
@@ -6472,12 +6493,10 @@ msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_libentry_fields_in_lib.cpp:243
 #, c-format
-msgid ""
-"A new name is entered for this component\n"
+msgid "A new name is entered for this component\n"
 "An alias %s already exists!\n"
 "Cannot update this component"
-msgstr ""
-"Byl zadán nový název této součástky\n"
+msgstr "Byl zadán nový název této součástky\n"
 "Alias %s již existuje!\n"
 "Součástku nelze aktualizovat"
 
@@ -6503,8 +6522,7 @@ msgid "Component &name:"
 msgstr "Jméno součástky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:36
-msgid ""
-"This is the component name in library,\n"
+msgid "This is the component name in library,\n"
 "and also the default component value when loaded in the schematic."
 msgstr ""
 
@@ -6513,8 +6531,7 @@ msgid "Default &reference designator:"
 msgstr "Výchozí návrhář &odkazů:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:59
-msgid ""
-"This is the reference used in schematic for annotation.\n"
+msgid "This is the reference used in schematic for annotation.\n"
 "Do not use digits in reference."
 msgstr ""
 
@@ -6523,8 +6540,7 @@ msgid "Number of &parts per package:"
 msgstr "Počet &součástek na balení"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:82
-msgid ""
-"This is the number of parts in this component package.\n"
+msgid "This is the number of parts in this component package.\n"
 "A 74LS00 gate has 4 parts per packages."
 msgstr ""
 
@@ -6533,8 +6549,7 @@ msgid "Create component with &alternate body style (DeMorgan)"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:105
-msgid ""
-"Check this option for components that have a De Morgan representation.\n"
+msgid "Check this option for components that have a De Morgan representation.\n"
 "This is usual for gates."
 msgstr ""
 
@@ -6543,8 +6558,7 @@ msgid "Create component as power &symbol"
 msgstr "Vytvořit součástek jako napájecí &symbol"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:119
-msgid ""
-"Check this option for power symbols.\n"
+msgid "Check this option for power symbols.\n"
 "Power symbols have specific properties for Eeschema:\n"
 "- Value cannot be edited (to avoid mistakes) because this is the pin name that is important for a power symbol\n"
 "- Reference is updated automatically when a netlist is created (no need to run Annotate)"
@@ -6555,8 +6569,7 @@ msgid "Parts in package locked (cannot be swapped)"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:133
-msgid ""
-"Check this option if Eeschema cannot change parts selections inside a given package\n"
+msgid "Check this option if Eeschema cannot change parts selections inside a given package\n"
 "This happens when parts are different in this package.\n"
 "When this option is not checked, Eeschema automatically choose the parts in packages to minimize packages count"
 msgstr ""
@@ -6570,8 +6583,7 @@ msgid "Pin text position &offset:"
 msgstr "&Posunutí pozice textu vývodu:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_new_component_base.cpp:156
-msgid ""
-"Margin (in 0.001 inches) between a pin name position and the component body.\n"
+msgid "Margin (in 0.001 inches) between a pin name position and the component body.\n"
 "A value from 10 to 40 is usually good."
 msgstr ""
 
@@ -6736,7 +6748,7 @@ msgstr "Výchozí velikost &označení"
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_eeschema_options_base.cpp:92
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_libedit_dimensions_base.cpp:69
 msgid "Repeat draw item &horizontal displacement:"
-msgstr ""
+msgstr "Opakovat kreslení položky &horizontální posun:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_eeschema_options_base.cpp:103
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_libedit_dimensions_base.cpp:83
@@ -7100,11 +7112,9 @@ msgid "The name of the symbol in the library from which this component came"
 msgstr "Název symbolu v knihovně, z které součástka pochází"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:74
-msgid ""
-"Use the alternate shape of this component.\n"
+msgid "Use the alternate shape of this component.\n"
 "For gates, this is the \"De Morgan\" conversion"
-msgstr ""
-"Použít alternativní tvar této součástky.\n"
+msgstr "Použít alternativní tvar této součástky.\n"
 "Pro hradla je to konverze \"De Morgan\""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:78
@@ -7117,11 +7127,9 @@ msgid "Reset to Library Defaults"
 msgstr "Vrátit na výchozí hodnoty knihovny"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:83
-msgid ""
-"Set position and style of fields and component orientation  to default lib value.\n"
+msgid "Set position and style of fields and component orientation  to default lib value.\n"
 "Fields texts are not modified."
-msgstr ""
-"Nastavit pozici a styl polí a orientaci součástek na výchozí hodnoty knihovny.\n"
+msgstr "Nastavit pozici a styl polí a orientaci součástek na výchozí hodnoty knihovny.\n"
 "Texty polí nebudou pozměněny."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:90
@@ -7215,11 +7223,9 @@ msgid "Field Name"
 msgstr "Název pole"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:173
-msgid ""
-"The name of the currently selected field\n"
+msgid "The name of the currently selected field\n"
 "Some fixed fields names are not editable"
-msgstr ""
-"Název aktuálně zvoleného pole\n"
+msgstr "Název aktuálně zvoleného pole\n"
 "Některé pevné názvy polí nelze upravovat"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:182
@@ -7271,13 +7277,11 @@ msgid "Component library files"
 msgstr "Knihovny součástek"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_eeschema_config_fbp.cpp:23
-msgid ""
-"List of active library files.\n"
+msgid "List of active library files.\n"
 "Only library files in this list are loaded by Eeschema.\n"
 "The order of this list is important:\n"
 "Eeschema searchs for a given component using this list order priority."
-msgstr ""
-"Seznam aktivních knihoven.\n"
+msgstr "Seznam aktivních knihoven.\n"
 "Eeschema načte pouze knihovny, uvedené na tomto seznamu.\n"
 "Pořadí na tomto seznamu je důležité:\n"
 "Eeschema danou součástku s prioritou danou tímto seznamem."
@@ -7296,7 +7300,7 @@ msgstr "Číslo &pinu"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_edit_pin_base.cpp:42
 msgid "Pin number: 1 to 4 ASCII letters and/or digits"
-msgstr ""
+msgstr "Číslo pinu: 1-4 ASCII písmen a / nebo číslic"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_edit_pin_base.cpp:49
 msgid "&Orientation:"
@@ -7387,8 +7391,7 @@ msgid "Pin Name Inside"
 msgstr "Název vývodu uvnitř"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_lib_base.cpp:46
-msgid ""
-"Check this option to have pin names inside the body and pin number outside.\n"
+msgid "Check this option to have pin names inside the body and pin number outside.\n"
 "If not checked pins names and pins numbers are outside."
 msgstr ""
 
@@ -7405,8 +7408,7 @@ msgid "Description:"
 msgstr "Popis:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_lib_base.cpp:111
-msgid ""
-"A short description that is displayed in Eeschema.\n"
+msgid "A short description that is displayed in Eeschema.\n"
 "Can be a very good help when selecting components in libraries components lists."
 msgstr ""
 
@@ -7415,8 +7417,7 @@ msgid "Keywords:"
 msgstr "Klíčová slova:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_lib_base.cpp:120
-msgid ""
-"Enter key words that can be used to select this component.\n"
+msgid "Enter key words that can be used to select this component.\n"
 "Key words cannot have spaces and are separated by a space."
 msgstr ""
 
@@ -7441,8 +7442,7 @@ msgid "Alias List:"
 msgstr "Seznam aliasů:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_lib_base.cpp:160
-msgid ""
-"An alias is a component that uses the body of its root component.\n"
+msgid "An alias is a component that uses the body of its root component.\n"
 "It has its own documentation and keywords.\n"
 "A fast way to extend a library with similar components"
 msgstr ""
@@ -7457,8 +7457,7 @@ msgid "Footprints"
 msgstr "Pouzdra"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_edit_component_in_lib_base.cpp:196
-msgid ""
-"A list of footprints names that can be used for this component.\n"
+msgid "A list of footprints names that can be used for this component.\n"
 "Footprints names can used jockers.\n"
 "(like sm* to allow all footprints names starting by sm)."
 msgstr ""
@@ -7621,11 +7620,12 @@ msgid "Apply"
 msgstr "Použít"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_color_config.cpp:316
-msgid ""
-"Warning:\n"
+msgid "Warning:\n"
 "Some items have the same color as the background\n"
 "and they will not be seen on screen"
-msgstr ""
+msgstr "Varování:\n"
+"Některé položky mají stejnou barvu jako pozadí\n"
+"a nebudou vidět na obrazovce"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/dialogs/dialog_lib_edit_draw_item_base.cpp:34
 msgid "&Width:"
@@ -8514,7 +8514,7 @@ msgstr "Přidat průchodku"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/onrightclick.cpp:444
 msgid "Switch Track Posture"
-msgstr ""
+msgstr "Přepnout pozici spoje"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/onrightclick.cpp:451
 msgid "Place Micro Via"
@@ -8738,11 +8738,9 @@ msgid "Unable to find the footprint source on the main board"
 msgstr "Nelze najít zdroj pouzdra na hlavní desce"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/modedit.cpp:302
-msgid ""
-"\n"
+msgid "\n"
 "Cannot update the footprint"
-msgstr ""
-"\n"
+msgstr "\n"
 "Nelze aktualizovat pouzdro"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/modedit.cpp:311
@@ -8750,11 +8748,9 @@ msgid "A footprint source was found on the main board"
 msgstr "Zdroj pouzdra nalezen na hlavní desce"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/modedit.cpp:312
-msgid ""
-"\n"
+msgid "\n"
 "Cannot insert this footprint"
-msgstr ""
-"\n"
+msgstr "\n"
 "Nelze vložit toto pouzdro"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/modedit.cpp:834
@@ -8893,7 +8889,9 @@ msgstr "OK pro smazání uzamčených pouzder, která nejsou v netlistu?"
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/netlist.cpp:602
 #, c-format
 msgid "Component \"%s\": Mismatch! module is [%s] and netlist said [%s]\n"
+""
 msgstr "Součástka: %s: Neshoda! modul je [%s], podle netlistu [%s]\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/netlist.cpp:636
 #, c-format
@@ -8981,31 +8979,45 @@ msgstr "Klíčové slovo:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:180
 msgid "Compile ratsnest...\n"
+""
 msgstr "Sestavit naznačené spoje...\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:196
 msgid "Aborting\n"
+""
 msgstr "Přerušování\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:209
 msgid "Pad clearances...\n"
+""
 msgstr "Izolační mezera plošky...\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:219
 msgid "Track clearances...\n"
+""
 msgstr "Izolační mezera spojů\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:229
 msgid "Fill zones...\n"
+""
 msgstr "Vyplnit zóny...\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:237
 msgid "Test zones...\n"
+""
 msgstr "Testovat zóny...\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:248
 msgid "Unconnected pads...\n"
+""
 msgstr "Nezapojené plošky...\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:262
 msgid "Finished"
@@ -9014,12 +9026,12 @@ msgstr "Dokončeno"
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:302
 #, c-format
 msgid "NETCLASS: '%s' has Clearance:%s which is less than global:%s"
-msgstr ""
+msgstr "NETCLASS: '%s' má mezeru:%s která je menší než globální:%s"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:317
 #, c-format
 msgid "NETCLASS: '%s' has TrackWidth:%s which is less than global:%s"
-msgstr ""
+msgstr "NETCLASS: '%s' má šířku spoje:%s která je menší než globální:%s"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/drc.cpp:331
 #, c-format
@@ -9278,11 +9290,9 @@ msgid "A wire_via references a missing padstack \"%s\""
 msgstr "U reference drátové propojky chybí prvky vrstev \"%s\""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/zones_non_copper_type_functions.cpp:141
-msgid ""
-"Error :\n"
+msgid "Error :\n"
 "you must choose a copper min thickness value bigger than 0.001 inch (or 0.0254 mm)"
-msgstr ""
-"Chyba:\n"
+msgstr "Chyba:\n"
 "Je třeba zvolit minimální tloušťku mědi  větší, než 0.001 palce (nebo 0.00254 mm)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/zones_non_copper_type_functions.cpp:177
@@ -9398,7 +9408,7 @@ msgid "Edit the settings for new pads"
 msgstr "Upravit nastavení pro nové plošky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/menubar_modedit.cpp:186
-msgid "User Grid Size"
+msgid "&User Grid Size"
 msgstr "Velikost uživatelské mřížky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/menubar_modedit.cpp:187
@@ -9955,11 +9965,9 @@ msgid "File %s is not a eeschema library"
 msgstr "Soubor %s není knihovna Eeschema"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/librairi.cpp:530
-msgid ""
-"Module exists\n"
+msgid "Module exists\n"
 " Line: "
-msgstr ""
-"Modul existuje\n"
+msgstr "Modul existuje\n"
 "  Řádek:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/librairi.cpp:642
@@ -10028,11 +10036,9 @@ msgstr "Chyba: neočekávaný konec souboru!"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/ioascii.cpp:332
 #, c-format
-msgid ""
-"Error reading PcbPlotParams from %s:\n"
+msgid "Error reading PcbPlotParams from %s:\n"
 "%s"
-msgstr ""
-"Chyba čtení PcbPlotParams z %s:\n"
+msgstr "Chyba čtení PcbPlotParams z %s:\n"
 "%s"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/cross-probing.cpp:62
@@ -10473,37 +10479,29 @@ msgstr "Aktuální pouzdro bude ztraceno a tuto operaci nelze vrátit. Pokračov
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/plot_rtn.cpp:125
 #, c-format
-msgid ""
-"Your BOARD has a bad layer number of %u for module\n"
+msgid "Your BOARD has a bad layer number of %u for module\n"
 " %s's \"reference\" text."
-msgstr ""
-"Deska obsahuje nesprávné číslo vrstvy %u u modulu %s\n"
+msgstr "Deska obsahuje nesprávné číslo vrstvy %u u modulu %s\n"
 "v poli \"reference\"."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/plot_rtn.cpp:145
 #, c-format
-msgid ""
-"Your BOARD has a bad layer number of %u for module\n"
+msgid "Your BOARD has a bad layer number of %u for module\n"
 " %s's \"value\" text."
-msgstr ""
-"Deska obsahuje nesprávné číslo vrstvy %u u modulu %s\n"
+msgstr "Deska obsahuje nesprávné číslo vrstvy %u u modulu %s\n"
 "v poli \"hodnota\"."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/plot_rtn.cpp:183
 #, c-format
-msgid ""
-"Your BOARD has a bad layer number of %u for module\n"
+msgid "Your BOARD has a bad layer number of %u for module\n"
 " %s's \"module text\" text of %s."
-msgstr ""
-"Deska obsahuje nesprávné číslo vrstvy %u u modulu %s\n"
+msgstr "Deska obsahuje nesprávné číslo vrstvy %u u modulu %s\n"
 " v poli \"text modulu\" %s."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/tool_pcb.cpp:32
-msgid ""
-"Show active layer selections\n"
+msgid "Show active layer selections\n"
 "and select layer pair for route and place via"
-msgstr ""
-"Zobrazit výběr aktivních vrstev\n"
+msgstr "Zobrazit výběr aktivních vrstev\n"
 "a výběr páru vrstev pro umístění a propojení via"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/tool_pcb.cpp:195
@@ -10583,8 +10581,7 @@ msgid "Enable high contrast display mode"
 msgstr "Povolit zobrazení ve vysokém kontrastu"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/tool_pcb.cpp:370
-msgid ""
-"Show/hide the toolbar for microwaves tools\n"
+msgid "Show/hide the toolbar for microwaves tools\n"
 " This is a experimental feature (under development)"
 msgstr ""
 
@@ -10613,11 +10610,9 @@ msgid "Create a polynomial shape for microwave applications"
 msgstr "Vytvořit polynomický tvar pro mikrovlnné aplikace"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/tool_pcb.cpp:535
-msgid ""
-"Auto track width: when starting on an existing track use its width\n"
+msgid "Auto track width: when starting on an existing track use its width\n"
 "otherwise, use current width setting"
-msgstr ""
-"Automatická šířka spojů: začínají-li na již existujícím spoji, použít jeho šířku\n"
+msgstr "Automatická šířka spojů: začínají-li na již existujícím spoji, použít jeho šířku\n"
 "Jinak použít nastavenou šířku"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/tool_pcb.cpp:581
@@ -11004,11 +10999,9 @@ msgstr "Pcbnew je již spuštěn. Pokračovat?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/pcbnew.cpp:163
 #, c-format
-msgid ""
-"File <%s> does not exist.\n"
+msgid "File <%s> does not exist.\n"
 "This is normal for a new project"
-msgstr ""
-"Soubor <%s> neexistuje.\n"
+msgstr "Soubor <%s> neexistuje.\n"
 "Toto je normální pro nový projekt"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/clean.cpp:77
@@ -11130,11 +11123,9 @@ msgid "Updating ratsnest..."
 msgstr "Aktualizace naznačených spojů"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/gen_drill_report_files.cpp:262
-msgid ""
-" Drill map: Too many diameter values to draw to draw one symbol per drill value (max 13)\n"
+msgid " Drill map: Too many diameter values to draw to draw one symbol per drill value (max 13)\n"
 "Plot uses circle shape for some drill values"
-msgstr ""
-" Mapa vrtání: příliš mnoho průměrů ke kreslení jednoho symbolu (max 13)\n"
+msgstr " Mapa vrtání: příliš mnoho průměrů ke kreslení jednoho symbolu (max 13)\n"
 "Při kreslení je u některých hodnot použit kruhový tvar"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/muonde.cpp:212
@@ -11499,8 +11490,7 @@ msgid "All pads nets clearance"
 msgstr "Izolační mezera všech plošek sítě"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_edit_module_for_BoardEditor_base.cpp:158
-msgid ""
-"This is the local net clearance for all pad of this footprint\n"
+msgid "This is the local net clearance for all pad of this footprint\n"
 "If 0, the Netclass values are used\n"
 "This value can be superseded by a pad local value."
 msgstr ""
@@ -11517,8 +11507,7 @@ msgid "Solder mask clearance:"
 msgstr "Izolační mezera masky:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_edit_module_for_BoardEditor_base.cpp:180
-msgid ""
-"This is the local clearance between pads and the solder mask\n"
+msgid "This is the local clearance between pads and the solder mask\n"
 "for this footprint\n"
 "This value can be superseded by a pad local value.\n"
 "If 0, the global value is used"
@@ -11529,8 +11518,7 @@ msgid "Solder paste clearance:"
 msgstr "Izolační mezera pájecí pasty:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_edit_module_for_BoardEditor_base.cpp:193
-msgid ""
-"This is the local clearance between pads and the solder paste\n"
+msgid "This is the local clearance between pads and the solder paste\n"
 "for this footprint.\n"
 "This value can be superseded by a pad local values.\n"
 "The final clearance value is the sum of this value and the clearance value ratio\n"
@@ -11542,8 +11530,7 @@ msgid "Solder mask ratio clearance:"
 msgstr "Poměr izolační mezery pájecí masky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_edit_module_for_BoardEditor_base.cpp:206
-msgid ""
-"This is the local clearance ratio in per cent between pads and the solder paste\n"
+msgid "This is the local clearance ratio in per cent between pads and the solder paste\n"
 "for this footprint.\n"
 "A value of 10 means the clearance value is 10 per cent of the pad size\n"
 "This value can be superseded by a pad local value.\n"
@@ -11783,7 +11770,7 @@ msgstr "Nastavit všechny průchodky hodnotu třídy sítě"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_global_edit_tracks_and_vias.cpp:192
 msgid "Set All Track to Netclass value"
-msgstr ""
+msgstr "Nastavit Netclass hodnotu u všech cest"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_graphic_items_options_base.cpp:23
 msgid "Graphics:"
@@ -11838,8 +11825,7 @@ msgid "Default pen size"
 msgstr "Výchozí velikost pera"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_graphic_items_options_base.cpp:100
-msgid ""
-"Pen size used to draw items that have no pen size specified.\n"
+msgid "Pen size used to draw items that have no pen size specified.\n"
 "Used mainly to draw items in sketch mode."
 msgstr ""
 
@@ -11876,11 +11862,9 @@ msgid "3D Shapes Files Option:"
 msgstr "Možnosti souborů 3D tvarů:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_general_options_BoardEditor_base.cpp:26
-msgid ""
-"Activates the display of relative coordinates from relative origin (set by the space key)\n"
+msgid "Activates the display of relative coordinates from relative origin (set by the space key)\n"
 "to the cursor, in polar coordinates (angle and distance)"
-msgstr ""
-"Aktivuje zobrazení relativních souřadnic od relativního počátku (zvoleného mezerníkem)\n"
+msgstr "Aktivuje zobrazení relativních souřadnic od relativního počátku (zvoleného mezerníkem)\n"
 "ke kurzoru v polárních souřadnicích (úhel a vzdálenost)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_general_options_BoardEditor_base.cpp:34
@@ -11920,11 +11904,9 @@ msgid "Drc ON"
 msgstr "DRC zapnuto"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_general_options_BoardEditor_base.cpp:77
-msgid ""
-"Enable/disable the DRC control.\n"
+msgid "Enable/disable the DRC control.\n"
 "When DRC is disable, all connections are allowed."
-msgstr ""
-"Zapnout/vypnout kontrolu DRC.\n"
+msgstr "Zapnout/vypnout kontrolu DRC.\n"
 "Je-li DRC vypnuto, jsou povolena jakákoli propojení."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_general_options_BoardEditor_base.cpp:81
@@ -11940,11 +11922,9 @@ msgid "Show Mod Ratsnest"
 msgstr "Zobrazit naznačené spoje modulů"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_general_options_BoardEditor_base.cpp:89
-msgid ""
-"Shows (or not) the local ratsnest relative to a footprint, when moving it.\n"
+msgid "Shows (or not) the local ratsnest relative to a footprint, when moving it.\n"
 "This ratsnest is useful to place a footprint."
-msgstr ""
-"Zobrazit (skrýt) místní naznačené spoje vztažené k pouzdru při jeho přesunování.\n"
+msgstr "Zobrazit (skrýt) místní naznačené spoje vztažené k pouzdru při jeho přesunování.\n"
 "Tyto naznačené spoje jsou užitečné při umísťování součástky."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_general_options_BoardEditor_base.cpp:93
@@ -12047,11 +12027,9 @@ msgid "Hidden net filter:"
 msgstr "Skrýt filtr sítě:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones_base.cpp:73
-msgid ""
-"Pattern to filter net names in filtered list.\n"
+msgid "Pattern to filter net names in filtered list.\n"
 "Net names matching this pattern are not displayed."
-msgstr ""
-"Vzor pro filtrování názvů sítí v filtrovacím seznamu\n"
+msgstr "Vzor pro filtrování názvů sítí v filtrovacím seznamu\n"
 "Názvy sítí odpovídající tomuto vzoru nebudou zobrazeny"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones_base.cpp:77
@@ -12059,11 +12037,9 @@ msgid "Visible net filter:"
 msgstr "Viditelný filtr sítě:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones_base.cpp:82
-msgid ""
-"Pattern to filter net names in filtered list.\n"
+msgid "Pattern to filter net names in filtered list.\n"
 "Only net names matching this pattern are displayed."
-msgstr ""
-"Vzor pro filtrování názvů sítí v filtrovaném seznamu\n"
+msgstr "Vzor pro filtrování názvů sítí v filtrovaném seznamu\n"
 "Pouze názvy sítí odpovídající tomuto vzoru budou zobrazeny"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones_base.cpp:86
@@ -12109,7 +12085,7 @@ msgstr "Spojení plošky:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones_base.cpp:141
 msgid "Solid"
-msgstr ""
+msgstr "Plný"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones_base.cpp:141
 msgid "Thermal relief"
@@ -12365,11 +12341,9 @@ msgid "Show Via Holes:"
 msgstr "Zobrazit díry průchodek:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_display_options_base.cpp:40
-msgid ""
-"Show (or not) via holes.\n"
+msgid "Show (or not) via holes.\n"
 "If Defined Holes is selected, only the non default size holes are shown"
-msgstr ""
-"Zobrazit (nezobrazit) díry via.\n"
+msgstr "Zobrazit (nezobrazit) díry via.\n"
 "je-li zvoleno Definované díry, zobrazí se pouze díry s jinou, než výchozí velikostí"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_display_options_base.cpp:47
@@ -12406,18 +12380,16 @@ msgstr "Nový spoj"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_display_options_base.cpp:57
 msgid "New track with via area"
-msgstr ""
+msgstr "Nová cesta na via ploše"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_display_options_base.cpp:59
 msgid "Show Tracks Clearance:"
 msgstr "Zobrazit izolační mezeru:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_display_options_base.cpp:61
-msgid ""
-"Show( or not) tracks clearance area.\n"
+msgid "Show( or not) tracks clearance area.\n"
 "If New track is selected,  track clearance area is shown only when creating the track."
-msgstr ""
-"Zobrazit (nezobrazovat) oblast izolační mezery mezi spoji.\n"
+msgstr "Zobrazit (nezobrazovat) oblast izolační mezery mezi spoji.\n"
 "Je-li zvolen Nový spoj, zobrazí se oblast izolační mezery pouze při vytváření spoje."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_display_options_base.cpp:68
@@ -12490,10 +12462,9 @@ msgid "Add another Net Class"
 msgstr "Přidat další třídu sítě"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:80
-msgid ""
-"Remove the currently select Net Class\n"
+msgid "Remove the currently select Net Class\n"
 "The default Net Class cannot be removed"
-msgstr ""
+msgstr "Odstranit vybranou třídu sítě\nVýchozí třídu sítě nelze odstranit"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:85
 msgid "Move the currently selected Net Class up one row"
@@ -12552,11 +12523,9 @@ msgid "Default Via Type"
 msgstr "Výchozí typ průchodky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:167
-msgid ""
-"Select the current via type.\n"
+msgid "Select the current via type.\n"
 "Trough via is the usual selection"
-msgstr ""
-"Zvolte aktuální typ průchodky.\n"
+msgstr "Zvolte aktuální typ průchodky.\n"
 "Průchozí průchodka je obvyklou volbou"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:171
@@ -12568,8 +12537,7 @@ msgid "Allow micro vias"
 msgstr "Povolit mikroprůchodky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:175
-msgid ""
-"Allows or do not allow use of micro vias\n"
+msgid "Allows or do not allow use of micro vias\n"
 "They are very small vias only from an external copper layer to its near neightbour"
 msgstr ""
 
@@ -12598,8 +12566,7 @@ msgid "Min uvia drill dia"
 msgstr "Min. průměr vrtání uPrůchodky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:236
-msgid ""
-"Specific via diameters and track widths, which \n"
+msgid "Specific via diameters and track widths, which \n"
 "can be used to replace default Netclass values \n"
 "on demand, for arbitrary via or track segments."
 msgstr ""
@@ -12610,7 +12577,7 @@ msgstr "Vlastní velikosti průchodek:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:246
 msgid "Drill value: a blank or 0 => default Netclass value"
-msgstr ""
+msgstr "Průměr vrtání: prázdné nebo 0 => Výchozí hodnota třídy síťě"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:263
 msgid "Diameter"
@@ -12644,6 +12611,26 @@ msgstr "Průchodka 6"
 msgid "Via 7"
 msgstr "Průchodka 7"
 
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:318
+msgid "Via 8"
+msgstr "Průchodka 8"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:319
+msgid "Via 9"
+msgstr "Průchodka 9"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:320
+msgid "Via 10"
+msgstr "Průchodka 10"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:321
+msgid "Via 11"
+msgstr "Průchodka 11"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:322
+msgid "Via 12"
+msgstr "Průchodka 12"
+
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:288
 msgid "Custom Track Widths:"
 msgstr "Vlastní šířky spojů:"
@@ -12675,6 +12662,26 @@ msgstr "Spoj 6"
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:319
 msgid "Track 7"
 msgstr "Spoj 7"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:367
+msgid "Track 8"
+msgstr "Spoj 8"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:368
+msgid "Track 9"
+msgstr "Spoj 9"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:369
+msgid "Track 10"
+msgstr "Spoj 10"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:370
+msgid "Track 11"
+msgstr "Spoj 11"
+
+#: pcbnew/dialogs/dialog_design_rules_base.cpp:371
+msgid "Track 12"
+msgstr "Spoj 12"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules_base.cpp:335
 msgid "Global Design Rules"
@@ -12714,7 +12721,7 @@ msgstr "Velikost uPrůchodky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_global_edit_tracks_and_vias_base.cpp:92
 msgid "Netclass value"
-msgstr ""
+msgstr "Netclass hodnota"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_global_edit_tracks_and_vias_base.cpp:93
 msgid "Current value"
@@ -12853,8 +12860,7 @@ msgid "Front side"
 msgstr "Pohled zepředu"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_pad_properties_base.cpp:264
-msgid ""
-"Warning:\n"
+msgid "Warning:\n"
 "This pad is flipped on board.\n"
 "Back and front layers will be swapped."
 msgstr ""
@@ -12864,8 +12870,7 @@ msgid "Clearances:"
 msgstr "Izolační mezera:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_pad_properties_base.cpp:275
-msgid ""
-"Set these values to 0\n"
+msgid "Set these values to 0\n"
 "to use Parent footprint or global values"
 msgstr ""
 
@@ -12874,28 +12879,24 @@ msgid "Net pad clearance"
 msgstr "Izolační mezera plošek sítě"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_pad_properties_base.cpp:288
-msgid ""
-"This is the local net clearance for  pad.\n"
+msgid "This is the local net clearance for  pad.\n"
 "If 0, the footprint local value or the Netclass value is used"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_pad_properties_base.cpp:310
-msgid ""
-"This is the local clearance between this  pad and the solder mask\n"
+msgid "This is the local clearance between this  pad and the solder mask\n"
 "If 0, the footprint local value or the global value is used"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_pad_properties_base.cpp:323
-msgid ""
-"This is the local clearance between this pad and the solder paste.\n"
+msgid "This is the local clearance between this pad and the solder paste.\n"
 "If 0 the footprint value or the global value is used..\n"
 "The final clearance value is the sum of this value and the clearance value ratio\n"
 "A negative value means a smaller mask size than pad size"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_pad_properties_base.cpp:336
-msgid ""
-"This is the local clearance ratio in per cent between this pad and the solder paste.\n"
+msgid "This is the local clearance ratio in per cent between this pad and the solder paste.\n"
 "A value of 10 means the clearance value is 10 per cent of the pad size\n"
 "If 0 the footprint value or the global value is used..\n"
 "The final clearance value is the sum of this value and the clearance value\n"
@@ -13011,8 +13012,7 @@ msgid "Plot pads on silkscreen"
 msgstr "Tisknout plošky na vrstvě potisku"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_plot_base.cpp:89
-msgid ""
-"Enable/disable print/plot pads on silkscreen layers\n"
+msgid "Enable/disable print/plot pads on silkscreen layers\n"
 "When disable, pads are never potted on silkscreen layers\n"
 "When enable, pads are potted only if they appear on silkscreen layers"
 msgstr ""
@@ -13206,12 +13206,10 @@ msgid "Module Selection:"
 msgstr "Výběr modulu:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_netlist_fbp.cpp:29
-msgid ""
-"Select how footprints are recognized:\n"
+msgid "Select how footprints are recognized:\n"
 "by their reference (U1, R3...) (normal setting)\n"
 "or their time stamp (special setting after a full schematic reannotation)"
-msgstr ""
-"Zvolte, jak jsou pouzdra rozeznávána:\n"
+msgstr "Zvolte, jak jsou pouzdra rozeznávána:\n"
 "podle reference (U1, R3...) (normální nastavení)\n"
 "nebo podle času (speciální nastavení po opětovném očíslování celého schématu)"
 
@@ -13246,11 +13244,9 @@ msgid "Extra Footprints"
 msgstr "Odstranit přebytečná pouzdra"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_netlist_fbp.cpp:58
-msgid ""
-"Remove footprints found on the Board but not in netlist\n"
+msgid "Remove footprints found on the Board but not in netlist\n"
 "Note: only not locked footprints will be removed"
-msgstr ""
-"Odstranit pouzdra z desky, ale ne z netlistu\n"
+msgstr "Odstranit pouzdra z desky, ale ne z netlistu\n"
 "Poznámka: budou odstraněna pouze neuzamčená pouzdra"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_netlist_fbp.cpp:67
@@ -13290,11 +13286,9 @@ msgid "Use this attribute for most non smd components"
 msgstr "Použít tuto vlastnost pro většinu ne-SMD součástek"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_edit_module_for_Modedit.cpp:88
-msgid ""
-"Use this attribute for smd components.\n"
+msgid "Use this attribute for smd components.\n"
 "Only components with this option are put in the footprint position list file"
-msgstr ""
-"Použít tuto vlastnost pro SMD součástky.\n"
+msgstr "Použít tuto vlastnost pro SMD součástky.\n"
 "Seznam pozic pouzder bude obsahovat pouze tyto součástky"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_edit_module_for_Modedit.cpp:91
@@ -13867,28 +13861,25 @@ msgid "Dimensions:"
 msgstr "Rozměry:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_mask_clearance_base.cpp:30
-msgid ""
-"Note:\n"
+msgid "Note:\n"
 "- a positive value means a mask bigger than a pad\n"
 "- a negative value means a mask smaller than a pad\n"
+""
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_mask_clearance_base.cpp:44
-msgid ""
-"This is the global clearance between pads and the solder mask\n"
+msgid "This is the global clearance between pads and the solder mask\n"
 "This value can be superseded by local values for a footprint or a pad."
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_mask_clearance_base.cpp:57
-msgid ""
-"This is the global clearance between pads and the solder paste\n"
+msgid "This is the global clearance between pads and the solder paste\n"
 "This value can be superseded by local values for a footprint or a pad.\n"
 "The final clearance value is the sum of this value and the clearance value ratio"
 msgstr ""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_mask_clearance_base.cpp:70
-msgid ""
-"This is the global clearance ratio in per cent between pads and the solder paste\n"
+msgid "This is the global clearance ratio in per cent between pads and the solder paste\n"
 "A value of 10 means the clearance value is 10 per cent of the pad size\n"
 "This value can be superseded by local values for a footprint or a pad.\n"
 "The final clearance value is the sum of this value and the clearance value"
@@ -13909,17 +13900,26 @@ msgstr "<b>Aktuální obecná nastavení:</b><br>"
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules.cpp:216
 #, c-format
 msgid "Minimum value for tracks width: <b>%s</b><br>\n"
-msgstr ""
+""
+msgstr "Minimální hodnota pro šířkuy spojeů: <b>%s</b><br>\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules.cpp:220
 #, c-format
 msgid "Minimum value for vias diameter: <b>%s</b><br>\n"
-msgstr ""
+""
+msgstr "Minimální hodnota pro vias diameter: <b>%s</b><br>\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules.cpp:227
 #, c-format
 msgid "Minimum value for microvias diameter: <b>%s</b><br>\n"
+""
 msgstr ""
+
+#: pcbnew/menubar_pcbframe.cpp:408 pcbnew/tool_pcb.cpp:439
+msgid "Add footprints"
+msgstr "Vložit pouzdro"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_design_rules.cpp:704
 msgid "Errors detected, Abort"
@@ -14075,7 +14075,7 @@ msgstr "Měřítko 16"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones.cpp:239
 msgid "Chamfer distance"
-msgstr ""
+msgstr "Vzdálenost zkosení"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/pcbnew/dialogs/dialog_copper_zones.cpp:245
 msgid "Fillet radius"
@@ -14227,11 +14227,9 @@ msgid "Export to Eeschema"
 msgstr "Exportovat do Eeschema"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/bitmap2component/bitmap2cmp_gui_base.cpp:92
-msgid ""
-"Create a library file for Eeschema\n"
+msgid "Create a library file for Eeschema\n"
 "This library contains only one component: logo"
-msgstr ""
-"Vytvořit soubor knihovny pro Eeschema\n"
+msgstr "Vytvořit soubor knihovny pro Eeschema\n"
 "Tato knihovna obsahuje pouze jednu součástku: logo"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/bitmap2component/bitmap2cmp_gui_base.cpp:96
@@ -14239,8 +14237,7 @@ msgid "Export to Pcbnew"
 msgstr "Exportovat do Pcbnew"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/bitmap2component/bitmap2cmp_gui_base.cpp:97
-msgid ""
-"Create a footprint file for PcbNew\n"
+msgid "Create a footprint file for PcbNew\n"
 "This footprint contains only one footprint: logo"
 msgstr ""
 
@@ -14289,12 +14286,12 @@ msgstr "Vytvořit soubor pouzder pro PcbNew"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/mainframe.cpp:68
 #, c-format
-msgid ""
-"Ready\n"
+msgid "Ready\n"
 "Working dir: %s\n"
-msgstr ""
-"Připraven\n"
+""
+msgstr "Připraven\n"
 "Pracovní adresář: %s\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/mainframe.cpp:238
 msgid "Text file ("
@@ -14374,11 +14371,9 @@ msgid "Unzip Project"
 msgstr "Rozbalit projekt:"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/files-io.cpp:56
-msgid ""
-"\n"
+msgid "\n"
 "Open "
-msgstr ""
-"\n"
+msgstr "\n"
 "Otevřít "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/files-io.cpp:58
@@ -14395,11 +14390,15 @@ msgstr "Rozbalit soubor "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/files-io.cpp:94
 msgid " OK\n"
+""
 msgstr " OK\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/files-io.cpp:97
 msgid " *ERROR*\n"
+""
 msgstr " *CHYBA*\n"
+""
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/files-io.cpp:118
 msgid "Archive Project Files"
@@ -14411,11 +14410,9 @@ msgstr "Archivovat soubor"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/files-io.cpp:171
 #, c-format
-msgid ""
-"\n"
+msgid "\n"
 "Zip archive <%s> created"
-msgstr ""
-"\n"
+msgstr "\n"
 "Vytvořen zip archív <%s>"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/menubar.cpp:89
@@ -14531,11 +14528,9 @@ msgid "Permission error ?"
 msgstr "Chyba oprávnění?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/class_treeproject_item.cpp:187
-msgid ""
-"Changing file extension will change file type.\n"
+msgid "Changing file extension will change file type.\n"
 " Do you want to continue ?"
-msgstr ""
-"Změna přípony souboru změní jeho typ.\n"
+msgstr "Změna přípony souboru změní jeho typ.\n"
 " Chcete pokračovat?"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/class_treeproject_item.cpp:189
@@ -14561,11 +14556,9 @@ msgstr "Pracovní adresář: "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/kicad.cpp:69
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/prjconfig.cpp:127
-msgid ""
-"\n"
+msgid "\n"
 "Project: "
-msgstr ""
-"\n"
+msgstr "\n"
 "Projekt: "
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/preferences.cpp:47
@@ -14597,8 +14590,7 @@ msgid "GerbView (Gerber viewer)"
 msgstr "GerbView (prohlížeč Gerber)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/kicad/commandframe.cpp:88
-msgid ""
-"Bitmap2Component (a tool to build a logo from a bitmap)\n"
+msgid "Bitmap2Component (a tool to build a logo from a bitmap)\n"
 "Creates a component (for Eeschema) or a footprint (for Pcbnew) that shows a B&W picture"
 msgstr ""
 
@@ -14647,17 +14639,14 @@ msgstr "Typ chyby(%d): <b>%s</b><ul><li> %s: %s </li></ul>"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/include/richio.h:49
 #, c-format
-msgid ""
-"IO_ERROR: %s\n"
+msgid "IO_ERROR: %s\n"
 " from %s : %s"
-msgstr ""
-"IO_CHYBA: %s\n"
+msgstr "IO_CHYBA: %s\n"
 " z %s : %s"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/include/richio.h:50
 #, c-format
-msgid ""
-"PARSE_ERROR: %s in input/source \"%s\", line %d, offset %d\n"
+msgid "PARSE_ERROR: %s in input/source \"%s\", line %d, offset %d\n"
 " from %s : %s"
 msgstr ""
 
@@ -14727,11 +14716,9 @@ msgid "Place a net name (local label)"
 msgstr "Umístit jméno sítě (místní popisek)"
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/help_common_strings.h:40
-msgid ""
-"Place a global label.\n"
+msgid "Place a global label.\n"
 "Warning: all global labels with the same name are connected in whole hierarchy"
-msgstr ""
-"Přidat globální označení.\n"
+msgstr "Přidat globální označení.\n"
 "Pozor: všechna globální označení se stejným názvem budou spojena všude."
 
 #: /home/chronos/www/other/kicad/kicad.bzr/eeschema/help_common_strings.h:42
@@ -14934,6 +14921,1346 @@ msgstr "Vlastnosti zón bez mědi"
 msgid "Bitmap to Component Converter"
 msgstr "Převaděč bitmap na součástky"
 
+#: common/hotkeys_basic.cpp:830
+msgid "&Hotkeys"
+msgstr "Klávesové zkra&tky"
+
+#: kicad/menubar.cpp:317
+msgid "&Set Text Editor"
+msgstr "Na&stavit Textový editor"
+
+#: kicad/menubar.cpp:318
+msgid "Set your preferred text editor"
+msgstr "Nastavit textový editor pro editaci souborů"
+
+#: kicad/menubar.cpp:370
+msgid "Run Library Editor"
+msgstr "Spustit Editor knihovny"
+
+#: kicad/menubar.cpp:378
+msgid "Run Footprint Editor"
+msgstr "Spustit Editor součástek"
+
+#: kicad/menubar.cpp:393
+msgid "Run Pcb Calculator"
+msgstr "Spustit Pcb Kalkulator"
+
+#: common/dialogs/dialog_list_selector_base.cpp:28
+msgid "Items:"
+msgstr "Položka:"
+
+#: kicad/menubar.cpp:147 kicad/menubar.cpp:367
+msgid "Run Eeschema"
+msgstr "Spustit Eeschema"
+
+#: eeschema/menubar.cpp:464 kicad/menubar.cpp:149 kicad/menubar.cpp:374
+msgid "Run Pcbnew"
+msgstr "Spustit Pcbnew"
+
+#: kicad/menubar.cpp:151 kicad/menubar.cpp:382
+msgid "Run Gerbview"
+msgstr "Spustit GerbView"
+
+#: kicad/menubar.cpp:152 kicad/menubar.cpp:386
+msgid "Run Bitmap2Component"
+msgstr "Spustit Bitmap2Component"
+
+#: kicad/menubar.cpp:156
+msgid "Run PlEditor"
+msgstr "Spustit Pl Editor"
+
+#: kicad/menubar.cpp:398
+msgid "Run Page Layout Editor"
+msgstr "Spustit Page Layout Editor"
+
+#: kicad/menubar.cpp:398
+msgid "Load Preferences"
+msgstr "Načíst nastavení"
+
+#: eeschema/help_common_strings.h:53
+msgid "Place component"
+msgstr "Vložit součástku"
+
+#: pcbnew/tool_pcb.cpp:626
+#, c-format
+msgid "Track: %.3f mm (%.2f mils)"
+msgstr "Spoj: %.3f mm (%.2f mils)"
+
+#: pcbnew/tool_pcb.cpp:629
+#, c-format
+msgid "Track: %.2f mils (%.3f mm)"
+msgstr "Spoj: %.2f mils (%.3f mm)"
+
+#: pcbnew/tool_pcb.cpp:664
+#, c-format
+msgid "Via: %.2f mm (%.1f mils)"
+msgstr "Průchodka: %.2f mm (%.1f mils)"
+
+#: pcbnew/tool_pcb.cpp:667
+#, c-format
+msgid "Via: %.1f mils (%.2f mm)"
+msgstr "Průchodka: %.1f mils (%.2f mm)"
+
+#: pcbnew/tool_pcb.cpp:680
+#, c-format
+msgid "%.2f mm (%.1f mils)"
+msgstr "%.2f mm (%.1f mils)"
+
+#: pcbnew/tool_pcb.cpp:683
+#, c-format
+msgid "%.1f mils (%.2f mm)"
+msgstr "%.1f mils (%.2f mm)"
+
+#: common/base_screen.cpp:194
+#, c-format
+msgid "Grid: %.4f mm (%.2f mils)"
+msgstr "Mřížka: %.4f mm (%.2f mils)"
+
+#: common/base_screen.cpp:197
+#, c-format
+msgid "Grid: %.2f mils (%.4f mm)"
+msgstr "Mřížka: %.2f mils (%.4f mm)"
+
+#: pcbnew/dialogs/dialog_set_grid_base.cpp:23
+msgid "User Defined Grid"
+msgstr "Uživatelem definovaná mřížka"
+
+#: pcbnew/dialogs/dialog_set_grid_base.h:72
+msgid "Grid Properties"
+msgstr "Vlastnosti mřížky"
+
+#: pcbnew/dialogs/dialog_set_grid_base.cpp:109
+msgid "Grid 1:"
+msgstr "Mřížka 1:"
+
+#: pcbnew/dialogs/dialog_set_grid_base.cpp:116
+msgid "Grid 2:"
+msgstr "Mřížka 2:"
+
+#: pcbnew/moduleframe.cpp:517
+msgid "Save the changes to the footprint before closing?"
+msgstr "Uložit změny do knihovny pouzder před zavřením ?"
+
+#: eeschema/libeditframe.cpp:322
+msgid "Save the changes in the library before closing?"
+msgstr "Uložit změny do knihovny schémat před zavřením ?"
+
+#: pcbnew/dialogs/dialog_track_via_properties_base.h:97
+msgid "Track & Via Properties"
+msgstr "Vlastnosti spoje a průchodky"
+
+#: pcbnew/dialogs/dialog_display_options_base.cpp:26
+msgid "Tracks and Vias:"
+msgstr "Spoje a průchodky:"
+
+#: pcbnew/dialogs/dialog_track_via_properties_base.cpp:109
+msgid "Use net class width"
+msgstr "Použít šířku net class"
+
+#: common/dialogs/dialog_page_settings_base.cpp:78
+#: pcbnew/dialogs/dialog_global_modules_fields_edition_base.cpp:64
+#: pcbnew/dialogs/dialog_pcb_text_properties_base.cpp:46
+#: pcbnew/dialogs/dialog_pns_diff_pair_dimensions_base.cpp:25
+#: pcbnew/dialogs/dialog_track_via_properties_base.cpp:94
+msgid "Width:"
+msgstr "Šířka:"
+
+#: pcbnew/dialogs/dialog_global_deletion_base.cpp:40
+#: pcbnew/dialogs/dialog_track_via_properties_base.cpp:28
+msgid "Tracks"
+msgstr "Spoje"
+
+#: pcbnew/tools/common_actions.cpp:105 pcbnew/tools/common_actions.cpp:109
+msgid "Duplicate"
+msgstr "Duplikovat"
+
+#: pcbnew/tools/common_actions.cpp:156
+msgid "Properties..."
+msgstr "Vlastnosti ..."
+
+msgid "Create Array"
+msgstr "Vytvořit pole"
+
+#: pcbnew/tools/common_actions.cpp:118
+msgid "Create array"
+msgstr "Vytvořit pole"
+
+#: pcbnew/tools/common_actions.cpp:80
+msgid "Open in Footprint Editor"
+msgstr "Otevřít v editoru pouzder"
+
+#: pcbnew/modedit_onclick.cpp:293
+msgid "Move Exactly"
+msgstr "Přesunout na pozici"
+
+#: pcbnew/tools/common_actions.cpp:113
+msgid "Move Exactly..."
+msgstr "Přesunout na pozici ..."
+
+#: pcbnew/menubar_pcbframe.cpp:555
+msgid "&Interactive Routing"
+msgstr "&Interaktivní spoje"
+
+#: pcbnew/menubar_pcbframe.cpp:563
+msgid "G&rid"
+msgstr "&Mřížka"
+
+#: eeschema/hotkeys.cpp:89 gerbview/hotkeys.cpp:60
+#: pagelayout_editor/hotkeys.cpp:74 pcbnew/basepcbframe.cpp:846
+#: pcbnew/hotkeys.cpp:160 pcbnew/hotkeys.cpp:162
+#: pcbnew/tools/common_actions.cpp:247
+msgid "Zoom Auto"
+msgstr "Automatické zvětšení"
+
+#: pcbnew/help_common_strings.h:22
+msgid "Redraw the current screen"
+msgstr "Překreslit pracovní plochu"
+
+#: pcbnew/dialogs/dialog_graphic_items_options_base.h:72
+msgid "Text and Drawings"
+msgstr "Text a vykreslování"
+
+#: pcbnew/menubar_pcbframe.cpp:567
+msgid "Te&xts and Drawings"
+msgstr "Te&xt a  vykreslování"
+
+#: pcbnew/menubar_pcbframe.cpp:710
+msgid "D&imensions"
+msgstr "Ro&změry"
+
+#: pcbnew/class_board.cpp:1148 pcbnew/class_module.cpp:547
+#: pcbnew/class_netinfo_item.cpp:114 pcbnew/pcb_draw_panel_gal.cpp:336
+#: pcbnew/tools/pad_tool.cpp:50
+msgid "&Pads"
+msgstr "&Plošky"
+
+#: 3d-viewer/3d_viewer/3d_toolbar.cpp:162 cvpcb/menubar.cpp:132
+#: gerbview/menubar.cpp:272 kicad/menubar.cpp:443
+#: pagelayout_editor/menubar.cpp:182
+msgid "P&references"
+msgstr "&Možnosti"
+
+#: pcbnew/menubar_pcbframe.cpp:133
+msgid "Sa&ve Copy As..."
+msgstr "Uložit kopii jako..."
+
+#: pcbnew/menubar_pcbframe.cpp:147
+msgid "Resc&ue"
+msgstr "Zachránit"
+
+#: eeschema/dialogs/dialog_edit_component_in_schematic.cpp:1043
+#: eeschema/dialogs/dialog_edit_component_in_schematic_fbp.cpp:41
+#: eeschema/lib_pin.cpp:2103 gerbview/class_gerber_draw_item.cpp:535
+#: gerbview/class_gerber_draw_item.cpp:536 pcbnew/class_pcb_text.cpp:130
+#: pcbnew/class_text_mod.cpp:355
+msgid "&Yes"
+msgstr "&Ano"
+
+#: eeschema/dialogs/dialog_edit_component_in_schematic.cpp:1045
+#: eeschema/lib_pin.cpp:2105 gerbview/class_gerber_draw_item.cpp:535
+#: gerbview/class_gerber_draw_item.cpp:536 pcbnew/class_pcb_text.cpp:128
+#: pcbnew/class_text_mod.cpp:353
+msgid "&No"
+msgstr "&Ne"
+
+#: pcbnew/dialogs/wizard_3DShape_Libs_downloader.cpp:211
+msgid "Update"
+msgstr "Aktualizovat"
+
+#: cvpcb/class_DisplayFootprintsFrame.cpp:233
+msgid "&Redraw"
+msgstr "Aktualizovat"
+
+#: 3d-viewer/3d_viewer/eda_3d_viewer.cpp:1199
+msgid "Zoom in "
+msgstr "Přiblížit"
+
+#: 3d-viewer/3d_viewer/eda_3d_viewer.cpp:1199
+msgid "Zoom out "
+msgstr "Oddálit"
+
+#: eeschema/menubar.cpp:155 eeschema/menubar_libedit.cpp:161
+#: eeschema/tool_viewlib.cpp:191 pcbnew/menubar_modedit.cpp:215
+#: pcbnew/menubar_pcbframe.cpp:340 pcbnew/tool_modview.cpp:157
+msgid "Zoom &In"
+msgstr "Př&iblížit"
+
+#: eeschema/menubar.cpp:159 eeschema/menubar_libedit.cpp:165
+#: eeschema/tool_viewlib.cpp:195 pcbnew/menubar_modedit.cpp:219
+#: pcbnew/menubar_pcbframe.cpp:344 pcbnew/tool_modview.cpp:161
+msgid "Zoom &Out"
+msgstr "&Oddálit"
+
+#: eeschema/menubar.cpp:163 eeschema/menubar_libedit.cpp:169
+#: eeschema/tool_viewlib.cpp:199 pcbnew/menubar_modedit.cpp:223
+#: pcbnew/menubar_pcbframe.cpp:348 pcbnew/tool_modview.cpp:165
+msgid "&Fit on Screen"
+msgstr "Zobrazit vše"
+
+#: pcbnew/menubar_modedit.cpp:235 pcbnew/menubar_pcbframe.cpp:359
+msgid "&3D Viewer"
+msgstr "&3D zobrazení"
+
+#: nenastaveno
+#: pcbnew/menubar_modedit.cpp:242 pcbnew/menubar_pcbframe.cpp:378
+msgid "Legacy Canva&s"
+msgstr "Výchozí vykreslování"
+
+#: pcbnew/menubar_modedit.cpp:247 pcbnew/menubar_pcbframe.cpp:383
+msgid "Switch the canvas implementation to Legacy"
+msgstr ""
+
+#: pcbnew/menubar_modedit.cpp:250 pcbnew/menubar_pcbframe.cpp:386
+msgid "Open&GL Canvas"
+msgstr "Vykreslování OpenGL"
+
+#: pcbnew/menubar_modedit.cpp:255 pcbnew/menubar_pcbframe.cpp:391
+msgid "Switch the canvas implementation to OpenGL"
+msgstr ""
+
+#: pcbnew/menubar_modedit.cpp:258 pcbnew/menubar_pcbframe.cpp:394
+msgid "&Cairo Canvas"
+msgstr "Vykreslování Cairo"
+
+#: pcbnew/tool_pcb.cpp:233
+msgid "Open footprint editor"
+msgstr "Otevřít editor pouzder"
+
+#: pcbnew/tool_modedit.cpp:65 pcbnew/tool_pcb.cpp:237
+msgid "Open footprint viewer"
+msgstr "Otevřít prohlížeč knihoven"
+
+#: pcbnew/tool_modedit.cpp:73
+msgid "New footprint"
+msgstr "Nové pouzdro"
+
+#: eeschema/menubar.cpp:578 pcbnew/menubar_pcbframe.cpp:604
+msgid "Load Prefe&rences"
+msgstr "Načíst &nastavení"
+
+#: eeschema/sch_validators.cpp:87
+msgid "footprint"
+msgstr "Pouzdro"
+
+#: pcbnew/dialogs/dialog_edit_module_for_BoardEditor_base.cpp:141
+msgid "Lock footprint"
+msgstr "Zamknout pouzdro"
+
+#: pcbnew/dialogs/dialog_exchange_modules_base.cpp:46
+msgid "Change footprint"
+msgstr "Změna pouzdra"
+
+#: pcbnew/dialogs/dialog_exchange_modules_base.cpp:46
+msgid "Change footprints"
+msgstr "Změnit pouzdra"
+
+#: pcbnew/menubar_modedit.cpp:310 pcbnew/menubar_pcbframe.cpp:506
+msgid "&Footprint Libraries Wizard"
+msgstr "&Průvodce pouzdra knihovny"
+
+#: pcbnew/tools/common_actions.cpp:404
+msgid "Fill"
+msgstr "Vyplnit (aktualizovat) oblast"
+
+#: pcbnew/tools/common_actions.cpp:408
+msgid "Fill All"
+msgstr "Vyplnit (aktualizovat) vše"
+
+#: pcbnew/tools/common_actions.cpp:404
+msgid "Fill zone(s)"
+msgstr "Vyplnit oblast(i)"
+
+#: pcbnew/tools/common_actions.cpp:408
+msgid "Fill all zones"
+msgstr "Vyplnit všechny oblasti"
+
+#: pcbnew/tools/common_actions.cpp:412
+msgid "Unfill"
+msgstr "Odstranit výplň z oblasti"
+
+#: pcbnew/tools/common_actions.cpp:412
+msgid "Unfill zone(s)"
+msgstr "Odstranit výplň ze všech oblastí"
+
+#: pcbnew/tools/common_actions.cpp:416
+msgid "Unfill All"
+msgstr "Odstranit výplň ze všech oblastí"
+
+#: pcbnew/tools/zoom_menu.cpp:48
+#, c-format
+msgid "Zoom: %.2f"
+msgstr "Zvětšení: %.2f"
+
+#: pcbnew/tools/zoom_menu.cpp:38
+msgid "Zoom"
+msgstr "Pohled"
+
+#: pcbnew/class_track.cpp:1575
+#, c-format
+msgid "Track %s, net [%s] (%d) on layer %s, length: %s"
+msgstr "Spoj %s, net [%s] (%d) na vrstvě %s, délka: %s"
+
+#: pcbnew/class_track.cpp:183
+#, c-format
+msgid "Via %s net [%s] (%d) on layers %s/%s"
+msgstr "Průchodka %s, net [%s] (%d) na vrstvě %s/%s"
+
+#: pcbnew/tools/selection_tool.cpp:779
+msgid "Clarify selection"
+msgstr "Upřesnit výběr"
+
+#: pagelayaut_editor/files.cpp:137
+msgid "Open file"
+msgstr "Otevřít soubor"
+
+#: pagelayaut_editor/files.cpp:146
+msgid "Unable to load %s file"
+msgstr "Nelze otevřít soubor %s"
+
+#: pagelayaut_editor/files.cpp:152
+msgid "File <%s> loaded"
+msgstr "Soubor <%s> načten"
+
+#: pagelayaut_editor/files.cpp:173
+msgid "Create file"
+msgstr "Vytvořit soubor"
+
+#: pcbnew/menubar_pcbframe.cpp:239
+msgid "Page S&ettings"
+msgstr "Nastav&ení stránky"
+
+#: pcbnew/menubar_pcbframe.cpp:244
+msgid "&Print..."
+msgstr "Tisk ..."
+
+#: pcbnew/menubar_pcbframe.cpp:405
+msgid "&Footprint"
+msgstr "Pouzdro"
+
+#: pcbnew/menubar_pcbframe.cpp:410
+msgid "&Track"
+msgstr "Spoj"
+
+#: pcbnew/menubar_pcbframe.cpp:416
+msgid "&Zone"
+msgstr "Maska"
+
+#: pcbnew/menubar_pcbframe.cpp:419
+msgid "&Keepout Area"
+msgstr "Nevyplněná oblast"
+
+#: pcbnew/menubar_pcbframe.cpp:419
+msgid "&Arc"
+msgstr "Oblouk"
+
+#: pcbnew/menubar_pcbframe.cpp:429
+msgid "&Circle"
+msgstr "Kružnice"
+
+#: pcbnew/menubar_pcbframe.cpp:433
+msgid "&Line or Polygon"
+msgstr "Čára nebo výplň"
+
+#: pcbnew/menubar_pcbframe.cpp:433
+msgid "&Dimension"
+msgstr "Kótování"
+
+#: pcbnew/menubar_pcbframe.cpp:433
+msgid "La&yer alignment target"
+msgstr "Lícovací značka"
+
+#: pcbnew/menubar_pcbframe.cpp:450
+msgid "Drill and &Place Offset"
+msgstr "Bod počátku pro vrtání"
+
+#: pcbnew/menubar_pcbframe.cpp:455
+msgid "&Grid Origin"
+msgstr "Počáteční bod mřížky"
+
+#: pcbnew/menubar_pcbframe.cpp:462
+msgid "&Single Track"
+msgstr "Spoj a průchodky"
+
+#: pcbnew/menubar_pcbframe.cpp:729
+msgid "Ro&ute"
+msgstr "Spoje"
+
+#: pcbnew/menubar_pcbframe.cpp:732
+msgid "Pads &Mask Clearance"
+msgstr "Izolační mezery masky plošek a vývodů"
+
+#: pcbnew/menubar_pcbframe.cpp:530
+msgid "Hide La&yers Manager"
+msgstr "Skrýt Správce vrstev"
+
+#: pcbnew/menubar_pcbframe.cpp:530
+msgid "Show La&yers Manager"
+msgstr "Zobrazit Správce vrstev"
+
+#: pcbnew/menubar_pcbframe.cpp:536
+msgid "Hide Microwa&ve Toolbar"
+msgstr "Skrýt panel mikrovlnných nástrojů"
+
+#: pcbnew/menubar_pcbframe.cpp:536
+msgid "Show Microwave Toolbar"
+msgstr "Zobrazit panel mikrovlnných nástrojů"
+
+msgid "Gr&id"
+msgstr "Mřížka"
+
+msgid "Gri&d"
+msgstr "Mřížka"
+
+msgid "&Grid"
+msgstr "Mřížka"
+
+#: pcbnew/menubar_pcbframe.cpp:474
+msgid "&Tune Track Length"
+msgstr "Celková délka spoje"
+
+#: pcbnew/menubar_pcbframe.cpp:474
+msgid "Tune Differential Pair &Length"
+msgstr ""
+
+#: pcbnew/menubar_pcbframe.cpp:484
+msgid "Tune Differential Pair &Skew/Phase"
+msgstr ""
+
+#: pcbnew/menubar_pcbframe.cpp:613
+msgid "Update PCB from Schematics"
+msgstr "Aktualizovat PCB ze schématu"
+
+#: pcbnew/menubar_pcbframe.cpp:620
+msgid "Read &Netlist"
+msgstr "Načíst Netlist"
+
+#: pcbnew/menubar_pcbframe.cpp:625
+msgid "Set &Layer Pair"
+msgstr "Nastavit aktivní dvojici vrstev"
+
+#: pcbnew/menubar_pcbframe.cpp:685
+msgid "&List Hotkeys"
+msgstr "Klávesové zkratky"
+
+#: pcbnew/menubar_pcbframe.cpp:692
+msgid "Get &Involved"
+msgstr "Podílet se na vývoji"
+
+msgid "&Archive Current Project..."
+msgstr "Archivovat tento Projekt"
+
+msgid "&Unarchive Project"
+msgstr "Rozbalit Projekt z archivu"
+
+msgid "Create new project"
+msgstr "Vytvořit nový Projekt"
+
+msgid "Create new project from template"
+msgstr "Vytvořit nový Projekt ze šablony"
+
+#: Kicad/menubar.cpp:491
+msgid "Open existing project"
+msgstr "Otevřít Projekt"
+
+#: pagelayout_editor\events_functions.cpp:133
+msgid "Zoom to selection"
+msgstr "Zvětšit vybrané"
+
+msgid "Trivial Connection"
+msgstr "Jednoduchý spoj"
+
+msgid "Copper Connection"
+msgstr "Spoj mědi"
+
+msgid "Whole Net"
+msgstr ""
+
+msgid "Same Sheet"
+msgstr ""
+
+msgid "Exchange Footprint(s)"
+msgstr "Zaměnit pouzdro(a)"
+
+msgid "Merge Zones"
+msgstr "Sloučit masky"
+
+msgid "Duplicate Zone onto Layer"
+msgstr "Duplikovat masku do vrstvy"
+
+msgid "Lock"
+msgstr "Zamknout"
+
+msgid "Unlock"
+msgstr "Odemknout"
+
+msgid "Toggle Lock"
+msgstr "Přepnout zámek"
+
+msgid "Copy Pad Settings"
+msgstr "Kopírovat vlastnosti plošky"
+
+msgid "Apply Pad Settings"
+msgstr "Použít kopírované vlastnosti plošky"
+
+msgid "Push Pad Settings"
+msgstr "Kopírovat vlastnosti plošky do další"
+
+msgid "Interactive Router Settings"
+msgstr "Nastavení interaktivního spojování"
+
+#: pcbnew\tools\common_actions.cpp:622
+msgid "Drag Track/Via"
+msgstr "Posunout spoj/průchodku"
+
+#: pcbnew\tools\common_actions.cpp:632
+msgid "Remove Corner"
+msgstr "Odstranit roh"
+
+msgid "Align to Top"
+msgstr "Zaronat nahoru"
+
+msgid "Align to Bottom"
+msgstr "Zaronat dolů"
+
+msgid "Align to Left"
+msgstr "Zaronat vlevo"
+
+msgid "Align to Right"
+msgstr "Zaronat vpravo"
+
+msgid "Distribute Horizontally"
+msgstr "Rozmístit vodorovně"
+
+msgid "Distribute Vertically"
+msgstr "Rozmístit svisle"
+
+msgid "Locking"
+msgstr "Zámek"
+
+msgid "Select..."
+msgstr "Vybrat..."
+
+msgid "Align/distribute"
+msgstr "Zarovnat/rozmístit"
+
+msgid "Rotate Clockwise"
+msgstr "Otočit vlevo"
+
+msgid "Rotate Counter-clockwise"
+msgstr "Otočit vpravo"
+
+msgid "Add keepout areas"
+msgstr "Přidat nevyplněné oblasti"
+
+msgid "Revert to Las&t Backup"
+msgstr "Vrátit se k poslední záloze"
+
+msgid "&Default line width:"
+msgstr "&Výchozí šířka čáry:"
+
+msgid "&Show grid"
+msgstr "&Zobrazit mřížku"
+
+msgid "Landscape"
+msgstr "na šířku"
+
+msgid "Portrait"
+msgstr "na výšku"
+
+msgid "Layout Preview"
+msgstr "Náhled stránky"
+
+msgid "User (Custom)"
+msgstr "Vlastní velikost"
+
+msgid "Custom Size:"
+msgstr "Vlastní rozměr:"
+
+msgid "Height:"
+msgstr "Výška:"
+
+msgid "&Height:"
+msgstr "Výška:"
+
+msgid "Size:"
+msgstr "Rozměr:"
+
+msgid "Paper"
+msgstr "Papír"
+
+msgid "Issue Date"
+msgstr "Datum výkresu"
+
+msgid "Revision"
+msgstr "Revize"
+
+msgid "Title"
+msgstr "Název"
+
+msgid "Company"
+msgstr "Firma"
+
+msgid "Comment1"
+msgstr "Popis1"
+
+msgid "Comment2"
+msgstr "Popis2"
+
+msgid "Comment3"
+msgstr "Popis3"
+
+msgid "Comment4"
+msgstr "Popis4"
+
+msgid "Title Block Parameters"
+msgstr "Parametry stránky"
+
+msgid "Page layout description file"
+msgstr "Soubor popisu stránky"
+
+msgid "File &name:"
+msgstr "Název souboru:"
+
+msgid "Select Page Layout Descr File"
+msgstr "Vybrat soubor popisu stránky"
+
+msgid "P&lot..."
+msgstr "Výstup"
+
+msgid "Arc&hive Footprints"
+msgstr "Záloha pouzder"
+
+msgid "&Archive Footprints in a Project Library..."
+msgstr "Zálohovat pouzdra..."
+
+msgid "&Create Library and Archive Footprints..."
+msgstr "Vytvořit zálohu knihovny pouzder"
+
+msgid "Nickname"
+msgstr "Název"
+
+msgid "Select Folder"
+msgstr "Vybrat složku"
+
+msgid "Select a folder"
+msgstr "Vybrat složku"
+
+msgid "Folder:"
+msgstr "Složka:"
+
+msgid "Select Footprint Library Folder"
+msgstr "Výběr složky knihovny"
+
+msgid "&Default"
+msgstr "Výchozí"
+
+msgid "Edit All Tracks and Vias"
+msgstr "Globální úprava spojů a průchodek"
+
+msgid "Set Footp&rint Field Sizes"
+msgstr "Nastavení rozměrů popisků pouzder"
+
+msgid "&Swap Layers..."
+msgstr "Záměna vr&stev..."
+
+msgid "Footprint Filter:"
+msgstr "Filtr pouzder:"
+
+msgid "User defined"
+msgstr "Vlastní"
+
+msgid "Thickness:"
+msgstr "Tloušťka:"
+
+msgid "Set Text Size"
+msgstr "Nastavení rozměrů textu"
+
+msgid "kicad is already running, Continue?"
+msgstr "KiCAD je již spuštěn. Pokračovat?"
+
+msgid "&Undo"
+msgstr "Zpět"
+
+msgid "&Redo"
+msgstr "Znovu"
+
+msgid "&Find..."
+msgstr "&Najít..."
+
+msgid "&Global Deletions..."
+msgstr "Globální odstanění..."
+
+msgid "&Cleanup Tracks and Vias..."
+msgstr "Vyčistit spoje a průchodky"
+
+msgid "Filter Settings"
+msgstr "Nastavení filtru"
+
+msgid "Unlocked tracks"
+msgstr "Odemknuté spoje"
+
+msgid "Locked tracks"
+msgstr "Zamknuté spoje"
+
+msgid "Locked footprints"
+msgstr "Zamknutá pouzdra"
+
+msgid "Unlocked footprints"
+msgstr "Odemknutá pouzdra"
+
+msgid "All layers"
+msgstr "Všechny vrstvy"
+
+msgid "Current layer only"
+msgstr "Pouze vybranou vrstvu"
+
+msgid "Current layer:"
+msgstr "Vybraná vrstva:"
+
+msgid "Delete Items"
+msgstr "Smazání položek"
+
+msgid "Clear board"
+msgstr "Čistit desku"
+
+msgid "Board outlines"
+msgstr "Obrysy desky"
+
+msgid "Automatically routed tracks"
+msgstr "Automaticky vytvořené spoje"
+
+msgid "&Flip Board View"
+msgstr "Zobrazit desku obráceně"
+
+msgid "&Rotation angle:"
+msgstr "Úhel rotace:"
+
+msgid "Routing Options..."
+msgstr "Nastavení spojování..."
+
+msgid "Select Track/Via Width"
+msgstr "Vybrat šířku spoje/průchodky"
+
+msgid "Track width and via size"
+msgstr "Rozměry spoje a průchodky"
+
+msgid "Track width:"
+msgstr "Šířka spoje:"
+
+msgid "Via diameter:"
+msgstr "Průměr průchodky:"
+
+msgid "Via drill:"
+msgstr "Díra průchodky:"
+
+msgid "Custom Track/Via Size"
+msgstr "Vlastní rozměry spoje/průchodky"
+
+msgid "The item is locked. Do you want to continue?"
+msgstr "Tato položka je zamknuta. Odemnknout a pokračovat?"
+
+msgid "Selection contains locked items. Do you want to continue?"
+msgstr "Výběr obsahuje zamčené položky. Odemnknout a pokračovat?"
+
+msgid "Highlight collisions"
+msgstr "Zvýraznit kolizi"
+
+msgid "Shove"
+msgstr "Posouvat spoje/průchodky"
+
+msgid "Allow DRC violations"
+msgstr "Povolit chyby návrhových pravidel(DRC)"
+
+msgid "Optimizer effort"
+msgstr "Snaha optimalizace"
+
+msgid "low"
+msgstr "nízká"
+
+msgid "high"
+msgstr "vysoká"
+
+msgid "Place Through Via"
+msgstr "Vytvořit průchodku"
+
+msgid "Place Microvia"
+msgstr "Vytvořit mikroprůchodku"
+
+msgid "Place Blind/Buried Via"
+msgstr "Vytvořit Blind/Buried Via"
+
+msgid "New Track"
+msgstr "Nový spoj"
+
+msgid "Microvias have to be enabled in the design settings."
+msgstr "Mikroprůchodky je třeba povolit v nastavení"
+
+msgid "Allow micro vias (uVias)"
+msgstr "Povolit mikroprůchodky (mikroprůchody)"
+
+msgid "Custom Track Widths"
+msgstr "Vlastní šířky spojů"
+
+msgid "Custom Via Sizes"
+msgstr "Vlastní rozměry průchodek"
+
+msgid "Routing Options"
+msgstr "Možnosti spojování"
+
+msgid "Minimum track width"
+msgstr "Minimální šířka spoje"
+
+msgid "Minimum via diameter"
+msgstr "Minimální průměr průchodky"
+
+msgid "Minimum via drill"
+msgstr "Minimální průměr vrtáku"
+
+msgid "Minimum uVia diameter"
+msgstr "Minimální průměr mikroprůchodky"
+
+msgid "Select All"
+msgstr "Vybrat vše"
+
+msgid "Specific via diameters and track widths, which can be used to replace default Netclass values on demand,\nfor arbitrary vias or track segments."
+msgstr "Specifické průměry průchodek a šířky spojů,které mohou být použity jako náhrada za výchozí hodnoty tříd sítí \npro libovolné průchodky nebo části spojů."
+
+msgid "Net Classes"
+msgstr "Třídy sítí(NET)"
+
+msgid "Net Class Membership"
+msgstr "Členství sítí"
+
+msgid "Minimum uVia drill"
+msgstr "Minimální průměr vrtání mikroprůchodky"
+
+msgid "&Differential Pair"
+msgstr "Diferenciální páry spojů"
+
+msgid "&Save..."
+msgstr "Uložit..."
+
+msgid "Hotkeys List"
+msgstr "Seznam klávesových zkratek"
+
+
+msgid "&Edit Hotkeys"
+msgstr "Upravit klávesové zkratky"
+
+msgid "&Import Hotkeys"
+msgstr "Import klávesových zkratek"
+
+msgid "E&xport Hotkeys"
+msgstr "Export klávesových zkratek"
+
+msgid "Write Hotkey Configuration File:"
+msgstr "Zápis klávesových zkratek do souboru nastavení:"
+
+msgid "Path Configuration"
+msgstr "Nastavení cest"
+
+msgid "Path"
+msgstr "Cesta"
+
+msgid "Add a new entry to the table."
+msgstr "Přidat nový záznam do tabulky."
+
+msgid "Remove the selected entry from the table."
+msgstr "Odebrat vybranou položku z tabulky."
+
+msgid "Board Thickness"
+msgstr "Tloušťka desky"
+
+msgid "Load Footprint"
+msgstr "Načíst pouzdro"
+
+msgid "Select footprint to browse"
+msgstr "Vybrat pouzdro k prohlížení"
+
+msgid "No footprint found."
+msgstr "Nenalezeno žádné pouzdro."
+
+msgid "About"
+msgstr "O programu..."
+
+msgid "Copy Version Info"
+msgstr "Kopírovat informace o verzi"
+
+msgid "New Footprint"
+msgstr "Nové pouzdro"
+
+msgid "Enter footprint name:"
+msgstr "Název pouzdra:"
+
+msgid "Import Footprint"
+msgstr "Importovat pouzdro"
+
+msgid "Fast Switching"
+msgstr "Rychlé přepínání"
+
+msgid "Style (OpenGL && Cairo)"
+msgstr "Styl (OpenGL && Cairo)"
+
+msgid "Dots"
+msgstr "Tečky"
+
+msgid "Origin"
+msgstr "Počátek"
+
+msgid "Footprint Editor Options"
+msgstr "Nastavení editoru pouzder"
+
+msgid "Text &width"
+msgstr "Šířka textu"
+
+msgid "Text &height"
+msgstr "Výška textu"
+
+msgid "&Text line width"
+msgstr "Šířka linky textu"
+
+msgid "&Graphic line width"
+msgstr "Šířka grafické linky"
+
+msgid "On new graphic item creation:"
+msgstr "Pro vytvoření nového grafického prvku:"
+
+msgid "Default values on new footprint creation:"
+msgstr "Výchozí hodnoty pro vytvoření nového pouzdra:"
+
+msgid "Leave reference or value blank to use the footprint name as default text"
+msgstr ""
+
+msgid "V&alue"
+msgstr "Hodnota"
+
+msgid "Cl&ose"
+msgstr "Zavřít"
+
+msgid "A&nchor"
+msgstr "Ukotvení"
+
+msgid "&Settings"
+msgstr "Na&stavení"
+
+msgid "Pad number:"
+msgstr "Číslo plošky:"
+
+msgid "All copper layers"
+msgstr "Všechny vrstvy mědi"
+
+msgid "Circular hole"
+msgstr "Kulatá díra"
+
+msgid "Oval hole"
+msgstr "Oválná díra"
+
+msgid "Copper Zones"
+msgstr "Masky mědi"
+
+msgid "From parent footprint"
+msgstr "Od předešlého pouzdra"
+
+msgid "Copper:"
+msgstr "Měď:"
+
+msgid "Technical Layers"
+msgstr "Technické vrstvy:"
+
+msgid "Connector"
+msgstr "Konektor"
+
+msgid "Circular"
+msgstr "Kruhový"
+
+msgid "Rectangular"
+msgstr "Obdélníkový"
+
+msgid "Rounded Rectangle"
+msgstr "Zaoblený obdélník"
+
+msgid "Footprint Name in Library"
+msgstr "Název pouzdra v knihovně"
+
+msgid "Configure Paths"
+msgstr "Nastavení cest"
+
+msgid "All Files (*.*)"
+msgstr "Všechny soubory (*.*)"
+
+msgid "Paths:"
+msgstr "Cesty:"
+
+msgid "Select 3D Model"
+msgstr "Vybrat 3D Model"
+
+msgid "3D Settings"
+msgstr "3D Nastavení"
+
+msgid "Edit Filename"
+msgstr "Upravit název souboru"
+
+msgid "Footprint Properties"
+msgstr "Vlastnosti pouzdra"
+
+msgid "Attributes"
+msgstr "Atributy"
+
+
+msgid "Include &footprints"
+msgstr "Zahrnout pouzdra"
+
+msgid "Include &locked footprints"
+msgstr "Zahrnout zamknutá pouzdra"
+
+msgid "Include &tracks"
+msgstr "Zahrnout spoje"
+
+msgid "Include &zones"
+msgstr "Zahrnout masky"
+
+msgid "Include t&ext items"
+msgstr "Zahrnout textové položky"
+
+msgid "Include &drawings"
+msgstr "Zahrnout kresby"
+
+msgid "Include &board outline layer"
+msgstr "Zahrnout vrstvy obrysů desky"
+
+
+msgid "Draw &selected items while moving"
+msgstr "Kreslit vybrané prvky během přesouvání"
+
+
+msgid "Include &items on invisible layers"
+msgstr "Zahrnout položky v neviditelných vrstvách"
+
+msgid "Footprint Editor"
+msgstr "Editor pouzdra"
+
+msgid "Change Footprint(s)"
+msgstr "Změnit pouzdro(a)"
+
+msgid "Not available in OpenGL/Cairo canvases."
+msgstr "Tato funkce není dostupná v režimu OpenGL/Cairo."
+
+msgid "Info"
+msgstr "Informace"
+
+msgid "Diameter:"
+msgstr "Průměr:"
+
+msgid "Drill:"
+msgstr "Vrtat:"
+
+msgid "Use net class size"
+msgstr "Použít rozměry třídy sítě"
+
+msgid "Position X:"
+msgstr "Pozice X:"
+
+msgid "Position Y:"
+msgstr "Pozice Y:"
+
+msgid "Default pen size:"
+msgstr "Výchozí tloušťka pera"
+
+msgid "Edge width:"
+msgstr "Šířka hrany"
+
+msgid "Text thickness:"
+msgstr "Tloušťka textu"
+
+msgid "Board edge width:"
+msgstr "Šířka hrany desky"
+
+msgid "Copper text thickness:"
+msgstr "Tloušťka textu mědi:"
+
+msgid "Graphic segment width:"
+msgstr "Grafická šířka segmentu"
+
+msgid "Zoom Select"
+msgstr "Pohled"
+
+msgid "3&D Viewer"
+msgstr "3&D zobrazení"
+
+#, c-format
+msgid "Warning: unable to create backup file '%s'"
+msgstr "Varování: nelze vytvořit soubor zálohy  '%s"
+
+#, c-format
+msgid ""
+"Error saving board file '%s'.\n"
+"%s"
+msgstr ""
+"Chyba při ukládání souboru desky '%s'.\n"
+"%s"
+
+#, c-format
+msgid "Backup file: '%s'"
+msgstr "Soubor zálohy: '%s'"
+
+#, c-format
+msgid "Recovery file '%s' not found."
+msgstr "Soubor zálohy '%s' neexistuje."
+
+#, c-format
+msgid "Wrote board file: '%s'"
+msgstr "Pracovní soubor desky: '%s'"
+
+#, c-format
+msgid "Blind/buried vias have to be enabled in the design settings."
+msgstr "Blind/buried průchodky je třeba povolit v nastavení návrhovvých pravidel"
+
+msgid "Trace gap:"
+msgstr "Mezera spoje:"
+
+msgid "Via gap:"
+msgstr "Mezera průchodky:"
+
+msgid "Via gap same as trace gap"
+msgstr "Mezera průchodky stejná jako u spoje"
+
+msgid "Dimension Properties"
+msgstr "Vlastnosti"
+
+msgid "Text Width"
+msgstr "Šířka textu"
+
+msgid "Text Height"
+msgstr "Výška textu"
+
+msgid "Text Thickness"
+msgstr "Tloušťka textu"
+
+msgid "Text Position X"
+msgstr "Pozice textu X"
+
+msgid "Text Position Y"
+msgstr "Pozice textu Y"
+
+msgid "Line Segment Properties"
+msgstr "Vlastnosti úsečky"
+
+msgid "Default thickness:"
+msgstr "Výchozí tloušťka:"
+
+msgid "Arc angle:"
+msgstr "Úhel výseče:"
+
+msgid "Item thickness:"
+msgstr "Tloušťka položky:"
+
+msgid "Start point X:"
+msgstr "Počáteční bod X:"
+
+msgid "Start point Y:"
+msgstr "Počáteční bod Y:"
+
+msgid "End point X:"
+msgstr "Koncový bod X:"
+
+msgid "End point Y:"
+msgstr "Koncový bod Y:"
+
+msgid "Arc Properties"
+msgstr "Vlastnosti kruhové výseče"
+
+msgid "Center X:"
+msgstr "Střed X:"
+
+msgid "Center Y:"
+msgstr "Střed Y:"
+
+msgid "Start Point X:"
+msgstr "Počáteční bod X:"
+
+msgid "Start Point Y:"
+msgstr "Počáteční bod Y:"
+
+msgid "degrees"
+msgstr "stupně"
+
+msgid "Circle Properties"
+msgstr "Vlastnosti kružnice"
+
+msgid "Point X:"
+msgstr "Bod X:"
+
+msgid "Point Y:"
+msgstr "Bod Y:"
+
+msgid "Board Side"
+msgstr "Poloha na desce"
+
+msgid "Rotation (-360 to 360):"
+msgstr "Rotace (-360 do 360):"
+
+msgid "Lock pads"
+msgstr "Zamknout plošky"
+
+msgid "Shape:"
+msgstr "Tvar:"
+
+msgid "Corner radius:"
+msgstr "Rohový rádius:"
+
+msgid "Corner size ( percent of width):"
+msgstr "Rozměr rohu (procent z šířky):"
+
+msgid "Net name:"
+msgstr "Název sítě:"
+
+msgid "Pad type:"
+msgstr "Typ plošky:"
+
+msgid "Shape offset X:"
+msgstr "X Offset tvaru:"
+
+msgid "Shape offset Y:"
+msgstr "Y Offset tvaru:"
+
+msgid "Allow blind/buried vias"
+msgstr "Povolit slepé/utopené průchodky (prokovy)"
+
+msgid "Set Hotkey"
+msgstr "Nastavení klávesových zkratek"
+
+msgid "Command:"
+msgstr "Příkaz:"
+
+msgid "Current key:"
+msgstr "Aktuální klávesa:"
+
+msgid "Press a new hotkey, or press Esc to cancel..."
+msgstr "Stisknout novou kláv. zkratku,nebo zrušit stiskem ESC ..."
+
+msgid "Defaults"
+msgstr "Výchozí"
+
+msgid "Double-click to edit"
+msgstr "Poklepáním editovat"
+
+msgid "Please select a differential pair trace you want to tune."
+msgstr "Vyberte spoj diferenční dvojice, který chcete vyladit."
+
+msgid "Please select a track whose length you want to tune."
+msgstr "Vyberte spoj diferenční dvojice,jejíž délku chcete doladit."
+
+#: kicad/tree_project_frame.cpp:221
+#, c-format
+msgid ""
+"Current project directory:\n"
+"%s"
+msgstr ""
+"Aktuální složka projektu:\n"
+"%s"
+
+
+
 #~ msgid "Binary Picture"
 #~ msgstr "Binární obrázek"
 
@@ -14972,28 +16299,17 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgid "Load Stuff File"
 #~ msgstr "Načíst seznam materiálu"
 
-#~ msgid ""
-#~ "A Sub Hierarchy named %s exists, Use it (The data in this sheet will be "
-#~ "replaced)?"
-#~ msgstr ""
-#~ "Nalezena podřízená větev %s. Použít? (data v tomto listu budou nahrazena)"
+#~ msgid "A Sub Hierarchy named %s exists, Use it (The data in this sheet will be replaced)?"
+#~ msgstr "Nalezena podřízená větev %s. Použít? (data v tomto listu budou nahrazena)"
 
 #~ msgid "Sheet Filename Renaming Aborted"
 #~ msgstr "Přejmenovávání listu přerušeno"
 
-#~ msgid ""
-#~ "A file named %s exists, load it (otherwise keep current sheet data if "
-#~ "possible)?"
-#~ msgstr ""
-#~ "Soubor s názvem %s existuje. Načíst (zachovat současná data na listu, lze-"
-#~ "li)?"
+#~ msgid "A file named %s exists, load it (otherwise keep current sheet data if possible)?"
+#~ msgstr "Soubor s názvem %s existuje. Načíst (zachovat současná data na listu, lze-li)?"
 
-#~ msgid ""
-#~ "Do we convert it in a simple hierarchical sheet (otherwise delete current "
-#~ "sheet data)"
-#~ msgstr ""
-#~ "Převést do jednoduchého hierarchického listu (jinak smazat současný obsah "
-#~ "listu)"
+#~ msgid "Do we convert it in a simple hierarchical sheet (otherwise delete current sheet data)"
+#~ msgstr "Převést do jednoduchého hierarchického listu (jinak smazat současný obsah listu)"
 
 #~ msgid "Sheet %s (file %s) modified. Save it?"
 #~ msgstr "List %s (soubor %s) změněn.  Uložit?"
@@ -15170,12 +16486,8 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgid "&Bus"
 #~ msgstr "S&běrnice"
 
-#~ msgid ""
-#~ "Place a global label. Warning: all global labels with the same name are "
-#~ "connected in whole hierarchy"
-#~ msgstr ""
-#~ "Přidat globální označení. Pozor: všechna globální označení se stejným "
-#~ "názvem budou spojena všude."
+#~ msgid "Place a global label. Warning: all global labels with the same name are connected in whole hierarchy"
+#~ msgstr "Přidat globální označení. Pozor: všechna globální označení se stejným názvem budou spojena všude."
 
 #~ msgid "Graphic line or polygon"
 #~ msgstr "Čára nebo mnohoúhelník"
@@ -15230,8 +16542,7 @@ msgstr "Převaděč bitmap na součástky"
 
 #, fuzzy
 #~ msgid ""
-#~ "Changing the sheet file name can change all the schematic structures and "
-#~ "cannot be undone.\n"
+#~ "Changing the sheet file name can change all the schematic structures and cannot be undone.\n"
 #~ "Ok to continue renaming?"
 #~ msgstr "Změna názvu souboru může nevratně změnit strukturu schématu"
 
@@ -15435,12 +16746,10 @@ msgstr "Převaděč bitmap na součástky"
 
 #~ msgid ""
 #~ "Error :\n"
-#~ "you must choose a copper bridge value for thermal reliefs bigger than the "
-#~ "min zone thickness"
+#~ "you must choose a copper bridge value for thermal reliefs bigger than the min zone thickness"
 #~ msgstr ""
 #~ "Chyba:\n"
-#~ "Je třeba zvolit hodnotu měděného můstku v tepelných přechodech větší, než "
-#~ "minimální tloušťka zóny"
+#~ "Je třeba zvolit hodnotu měděného můstku v tepelných přechodech větší, než minimální tloušťka zóny"
 
 #~ msgid "Error : you must choose a net name"
 #~ msgstr "Chyba: je třeba zvolit název sítě"
@@ -15788,11 +17097,8 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgid "<%s> is not a valid Kicad PCB foot print library"
 #~ msgstr "<%s> není platnou knihovnou pouzder Kicad"
 
-#~ msgid ""
-#~ "Unexpected end of file occurred while parsing PCB foot print library <%s>."
-#~ msgstr ""
-#~ "Objevil se neočekávaný konec souboru při analýze knihovny pouzder PCB <%"
-#~ "s>."
+#~ msgid "Unexpected end of file occurred while parsing PCB foot print library <%s>."
+#~ msgstr "Objevil se neočekávaný konec souboru při analýze knihovny pouzder PCB <%s>."
 
 #~ msgid "Could not open PCB foot print library document file <%s>."
 #~ msgstr "Nelze otevřít soubor dokumentace knihovny PCB pouzder <%s>."
@@ -15897,8 +17203,7 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgstr "nízká úroveň na výstupu"
 
 #~ msgid "Duplicate Pin %4.4s (Pin %s loc %d, %d, and Pin %s loc %d, %d)"
-#~ msgstr ""
-#~ "Duplicitní vývod %4.4s (Pin %s pozice %d, %d, a Pin %s pozice %d, %d)"
+#~ msgstr "Duplicitní vývod %4.4s (Pin %s pozice %d, %d, a Pin %s pozice %d, %d)"
 
 #~ msgid "  Convert"
 #~ msgstr "  Převést"
@@ -16066,10 +17371,8 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgid "Place junction"
 #~ msgstr "Přidat propojení"
 
-#~ msgid ""
-#~ "Place a pin sheet created by importing a hierarchical label from sheet"
-#~ msgstr ""
-#~ "Umístit list vývodů vytvořený importem hierarchického označení z listu"
+#~ msgid "Place a pin sheet created by importing a hierarchical label from sheet"
+#~ msgstr "Umístit list vývodů vytvořený importem hierarchického označení z listu"
 
 #~ msgid "Graphic text (comment)"
 #~ msgstr "Text (komentář)"
@@ -16234,8 +17537,7 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgstr "Znovu načíst konfigurační soubor klávesových zkratek"
 
 #~ msgid "Run the text editor and edit the hotkey config file"
-#~ msgstr ""
-#~ "Spustit textový editor a upravit konfigurační soubor klávesových zkratek"
+#~ msgstr "Spustit textový editor a upravit konfigurační soubor klávesových zkratek"
 
 #~ msgid "home directory"
 #~ msgstr "Domovský adresář"
@@ -16247,29 +17549,19 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgstr "adresář kicad/template"
 
 #~ msgid "Use kicad/template directory to load or store Hotkey config files"
-#~ msgstr ""
-#~ "Načíst nebo uložit konfigurační soubor klávesových zkratek z/do adresáře "
-#~ "kicad/template"
+#~ msgstr "Načíst nebo uložit konfigurační soubor klávesových zkratek z/do adresáře kicad/template"
 
 #~ msgid "Hotkey config location"
 #~ msgstr "Umístění konfiguračního souboru klávesových zkratek"
 
 #~ msgid "Hotkey config file location selection (home directory or kicad tree)"
-#~ msgstr ""
-#~ "Umístění konfiguračního souboru klávesových zkratek (domovský adresář "
-#~ "nebo strom kicad)"
+#~ msgstr "Umístění konfiguračního souboru klávesových zkratek (domovský adresář nebo strom kicad)"
 
-#~ msgid ""
-#~ "ReCreatePrjConfig() called with project file <%s> which does not have the "
-#~ "correct file extension."
-#~ msgstr ""
-#~ "ReCreatePrjConfig() volaný s projektem <%s>, který nemá správnou příponu."
+#~ msgid "ReCreatePrjConfig() called with project file <%s> which does not have the correct file extension."
+#~ msgstr "ReCreatePrjConfig() volaný s projektem <%s>, který nemá správnou příponu."
 
-#~ msgid ""
-#~ "Grid size( %f, %f ) not in grid list, falling back to grid size( %f, %f )."
-#~ msgstr ""
-#~ "Velikost mřížky ( %f, %f ) není v seznamu, návrat zpět k velikosti ( %f, %"
-#~ "f )."
+#~ msgid "Grid size( %f, %f ) not in grid list, falling back to grid size( %f, %f )."
+#~ msgstr "Velikost mřížky ( %f, %f ) není v seznamu, návrat zpět k velikosti ( %f, %f )."
 
 #~ msgid "Grid ID %d not in grid list, falling back to grid size( %g, %g )."
 #~ msgstr "Mřížka %d není v seznamu, návrat zpět k velikosti ( %g, %g )."
@@ -16310,12 +17602,8 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgid "Edges Pcb"
 #~ msgstr "Okraje desky"
 
-#~ msgid ""
-#~ "Gerber files (.%s .gbr .gbx .lgr .ger .pho)|*.%s;*.gbr;*.gbx;*.lgr;*.ger;"
-#~ "*.pho|"
-#~ msgstr ""
-#~ "Soubory Gerber (.%s .gbr .gbx .lgr .ger .pho)|*.%s;*.gbr;*.gbx;*.lgr;*."
-#~ "ger;*.pho|"
+#~ msgid "Gerber files (.%s .gbr .gbx .lgr .ger .pho)|*.%s;*.gbr;*.gbx;*.lgr;*.ger;*.pho|"
+#~ msgstr "Soubory Gerber (.%s .gbr .gbx .lgr .ger .pho)|*.%s;*.gbr;*.gbx;*.lgr;*.ger;*.pho|"
 
 #~ msgid "Copy Block (shift mouse)"
 #~ msgstr "Kopírovat blok (shift + myš)"
@@ -16450,7 +17738,7 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgstr "Segment je upravován"
 
 #~ msgid "Track Width: %s   Vias Size : %s"
-#~ msgstr "Šířka spoje: %s   Velikost via: %s"
+#~ msgstr "Šířka spoje: %s   Velikost průchodky: %s"
 
 #~ msgid "in file"
 #~ msgstr "v souboru"
@@ -16481,8 +17769,7 @@ msgstr "Převaděč bitmap na součástky"
 
 #~ msgid ""
 #~ "Enter the default via drill diameter\n"
-#~ "All vias drills not set to a specific drill value will have this drill "
-#~ "value."
+#~ "All vias drills not set to a specific drill value will have this drill value."
 #~ msgstr ""
 #~ "Zadejte výchozí průměr díry via\n"
 #~ "Veškeré via, u kterých nebyl zvolen průměr, budou mít tento průměr vrtání."
@@ -16491,12 +17778,10 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgstr "Specifické vrtání via"
 
 #~ msgid ""
-#~ "Use a specific drill value for all vias that must have a given drill "
-#~ "value,\n"
+#~ "Use a specific drill value for all vias that must have a given drill value,\n"
 #~ "and set the via hole to this specific drill value using the pop up menu."
 #~ msgstr ""
-#~ "Použít zvolenou hodnotu vrtání pro všechny via, které musí mít danou "
-#~ "hodnotu vrtání\n"
+#~ "Použít zvolenou hodnotu vrtání pro všechny via, které musí mít danou hodnotu vrtání\n"
 #~ "a nastavit díru via na zvolenou hodnotu vrtání pomocí nabídky."
 
 #~ msgid "Micro Via Drill"
@@ -16718,12 +18003,8 @@ msgstr "Převaděč bitmap na součástky"
 #~ msgid "Show Tracks Sketch mode"
 #~ msgstr "Zobrazit spoje jako obrysy"
 
-#~ msgid ""
-#~ "Set lines width used to plot in sketch mode and plot pads outlines on "
-#~ "silk screen layers"
-#~ msgstr ""
-#~ "Nastavení tloušťky čáry použité k vykreslování v režimu obrysu a kreslení "
-#~ "obrysů plošek na vrstvě potisku"
+#~ msgid "Set lines width used to plot in sketch mode and plot pads outlines on silk screen layers"
+#~ msgstr "Nastavení tloušťky čáry použité k vykreslování v režimu obrysu a kreslení obrysů plošek na vrstvě potisku"
 
 #~ msgid "Enable/disable print/plot pads on silkscreen layers"
 #~ msgstr "Povolit/zakázat tisk/kreslení plošek na vrstvě potisku"
@@ -16925,3 +18206,6 @@ msgstr "Převaděč bitmap na součástky"
 
 #~ msgid "dialog_freeroute_exchange"
 #~ msgstr "Dialog Freeroute Exchange"
+
+#~ msgid "Grid"
+#~ msgstr "Mřížka "
